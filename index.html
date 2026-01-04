@@ -11,9 +11,11 @@
 		font-family: Trebuchet MS, verdana, sans-serif;
 		font-size: 14px;
 		color: #000000;
-		//min-width: 900px; 
+		min-width: 900px; 
 		//max-width: 900px; 
-		margin: auto;
+		margin-left: auto;
+		margin-right: auto;
+		//margin: auto;
 	}
 	.imageBack
 	{
@@ -28,8 +30,10 @@
 		background-attachment: fixed;
 		/* Centers the image on the page */ 
 		background-position: center; 
-		width: 900px;
-		height: 900px;
+	//	width: 900px;
+		height: 572px;
+	//	margin-left: auto;
+	//	margin-right: auto;
 	}
 	.top-container 
 	{
@@ -41,13 +45,18 @@
 	{
 	  position: sticky;
 	  top: 0;
-	  padding: 10px 16px;
+	 // padding: 10px 16px;
 	  background: #EDF4FC;
 	  color: #f1f1f1;
+	  min-width: 900px;
 	}
 	.content 
 	{
-	  padding: 0px;
+		//padding: 10px;
+		width: 100%;
+		//height: 572px;
+		margin: auto;
+		min-width: 900px;
 	}
 	button-link 
 	{
@@ -110,7 +119,7 @@
 		font-size: 48px;
 		vertical-align: middle;
 		position: relative;
-		top: 325px;
+		top: 250px;
 	}
 	.pixText2 
 	{
@@ -130,16 +139,18 @@
 </head>
 <body>
 
-<div class="header" id="myHeader">
+<div class="header" id="myHeader"><!--width: 900px;  EDF4FC position: relative; left: 214px;-->
 
-	<table>
+	<div style="text-align: center; background: #C5D6E8; margin: auto;"><img src="./images/BP_w_logo_2026.png" height="129" width="472" alt="Breakthrough Perspective Logo" style="" /></div>
+
+	<table style="width: 900px; background: #EDF4FC; margin: auto;">
 		<tr>
 			<td>
 				<p style="font-family: Trebuchet MS, verdana, sans-serif; font-size: 18px; color: #000000; position: relative; top: 0px; left: 10px;"><strong>Odilia McLeod</strong></p>
-				<p style="font-size: 12px; color: black; position: relative; top: -15px; left: 5px;">Certified Executive Coach</p>
+				<p style="font-size: 12px; color: black; position: relative; top: -15px; left: 5px;">Certified Execute Coach</p>
 			</td>
 			<td>
-				<div style="position: relative; top: -13px; left: 100px;">
+				<div style="position: relative; top: 0px; left: 50px;">
 					<button type="button" onclick="window.location.href='index.html';" class="menuSelectedButton">Home</button>
 					<button type="button" onclick="window.location.href='About_Odilia.html';" class="menuButton">About</button>
 					<button type="button" onclick="window.location.href='Coaching_Services.html';" class="menuButton">Services</button>
@@ -157,70 +168,83 @@
 
 <div class="content">
  
-	<!--div id="BP_logo" style="position: relative; left: -115px; top: 160px;"><center><img src="./images/BP_logoRoundC_2026.png" height="170" width="170" alt="Breakthrough Perspective Logo" style="position: absolute; opacity: 0.7;" /></center></div-->
-	
-	<div id="BP_logo" style="position: relative; left: -250px; top: 115px;"><center><img src="./images/BP_w_logo_2026.png" height="129" width="472" alt="Breakthrough Perspective Logo" style="position: absolute; opacity: 1;" /></center></div>
-	
-	<div class="imageBack"><!--div id="myP" class="pixText"><center> Breakthrough  Perspectives<br><a class="pixText2">Your Source for Insight</center></div--></div>
- 
-	<span style="font-size: 62px; color: #8A2244; font-family: segoe script;"><strong>H<a style="font-size: 28px;">ome</strong></a></span>
-	
+	<div  style="width: 100%;  margin: auto; background-color: #202904;"><!-- height: 572px; -->
+		<div class="imageBack"><div id="myP" class="pixText"><center> Breakthrough  Perspectives<br><a class="pixText2">Your Source for Insight</center></div></div>
+	</div>
+		
     <br />
 			
-	<a style="font-size: 14px; color: #942224;"><strong>Turning Career and Organizational Change Into Breakthrough Perspectives</strong></a><br />
+	<table  style="width: 900px; margin: auto; font-family: Trebuchet MS, verdana, sans-serif; font-size: 14px;">
+		<tr>
+			<td  style="width: 900px; margin: auto;">
+				<a style="width: 900px; margin: auto; font-size: 62px; color: #942224; font-family: segoe script;"><strong>H<a style="font-family: segoe script; font-size: 28px; color: #942224;">ome</strong></a></a>			
+			</td>
+		</tr>		
+		<tr>
+			<td  style="width: 900px; margin: auto; font-family: Trebuchet MS, verdana, sans-serif; font-size: 14px;">
 	
-	<pre style="font-family: Trebuchet MS, verdana, sans-serif; font-size: 14px;">
+				<a style="font-size: 14px; color: #942224;"><strong>Turning Career and Organizational Change Into Breakthrough Perspectives</strong></a><br />
 	
-I partner with corporate professionals who are navigating significant change, including:
+			</td>
+		</tr>		
+		<tr>
+			<td style="width: 900px; margin: auto; padding-left: 30px; font-family: Trebuchet MS, verdana, sans-serif; font-size: 14px; color: black;">
+				<br />
+				I partner with corporate professionals who are navigating significant change, including:<br />
+				<ul>
+					<li>Organizational change and uncertainty</li>
+					<li>Leadership transitions and expanded scope of responsibility</li>
+					<li>Career progression, promotions, or complete career pivots</li>
+					<li>Building resilience and confidence in new or elevated roles</li>
+					<li>Leading others through change while managing their own</li>
+				</ul>
+				Together, we focus on change readiness, resilience, and sustainable success not just surviving the transition, 
+				but emerging stronger, more focused, and more aligned.<br />
 
-	•	Organizational change and uncertainty
-	•	Leadership transitions and expanded scope of responsibility
-	•	Career progression, promotions, or complete career pivots
-	•	Building resilience and confidence in new or elevated roles
-	•	Leading others through change while managing their own
+			</td>
+		</tr>		
+		<tr>
+			<td style="width: 900px; margin: auto;">
+				
+				<br /><a style="font-size: 14px; color: #942224;"><strong>Coaching With Purpose</strong></a><br />
 
-Together, we focus on change readiness, resilience, and sustainable success not just surviving the transition, 
-but emerging stronger, more focused, and more aligned.
-
-	<br /><a style="font-size: 14px; color: #942224;"><strong>Coaching With Purpose</strong></a><br />
-
-As a coach, my role is to:
-
-	•	Support you through professional and life transitions
-	•	Help you create balance across career and personal fulfillment
-	•	Encourage authenticity and values-based decision-making
-	•	Challenge and support you to access your inner strength and take decisive action
-	•	Help you define and maintain clear boundaries across personal and professional roles
-	•	Serve as a trusted, co-creative partner who sharpens focus, aligns priorities, and champions your success
+			</td>
+		</tr>		
+		<tr>
+			<td style="width: 900px; margin: auto; padding-left: 30px; font-family: Trebuchet MS, verdana, sans-serif; font-size: 14px; color: black;">
+				<br />
+				As a coach, my role is to:<br />
+				<ul>
+					<li>Support you through professional and life transitions</li>
+					<li>Help you create balance across career and personal fulfillment</li>
+					<li>Encourage authenticity and values-based decision-making</li>
+					<li>Challenge and support you to access your inner strength and take decisive action</li>
+					<li>Help you define and maintain clear boundaries across personal and professional roles</li>
+					<li>Serve as a trusted, co-creative partner who sharpens focus, aligns priorities, and champions your success</li>
+				</ul>
+			</td>
+		</tr>		
+		<tr>
+			<td  style="width: 900px; margin: auto;">
+			
+				<br /><a style="font-size: 14px; color: #942224;"><strong>A Different Kind of Partnership</strong></a><br />
 		
-	<br /><a style="font-size: 14px; color: #942224;"><strong>A Different Kind of Partnership</strong></a><br />
-		
-I am your strategic thinking partner who helps you uncover clarity, build confidence, and move forward 
-with intention.
-
-Change isn’t going away! With the right perspective, it becomes a catalyst rather than a constraint.
-	</pre>			
-    <!--p>
-	I hold a Bachelor’s degree in Psychology from San Diego State University and a Master of Science in Psychology from Purdue University. I am also a Certified Executive Coach and Certified Career Coach through the Center for Executive Coaching (CEC), and a Social and Emotional Intelligence Certified Coach through the Institute for Social and Emotional Intelligence (ISEI).
-
-	But credentials alone don’t create insight. What gives me a distinct edge is the integration of education and lived corporate experience. Understanding both the organizational systems driving change and the human impact they create. I know how change affects confidence, performance, relationships, identity, and how to move through it with intention rather than reaction
-
-	<br /><br /><a style="font-size: 14px; color: #942224;"><strong>Living the Transition I Coach</strong></a><br /><br />
-
-	I am not only guiding others through career and life transitions, I am a living example of what’s possible.
-
-	After decades in the corporate world, I made the intentional decision to transition into an entirely new career. This shift required redefining success, letting go of familiar identities, navigating uncertainty, and building something aligned with my values and strengths. It demanded courage, resilience, and clarity: the very competencies I help my clients develop.
-
-	Having walked this path myself, I understand the complexity of change at a deeply personal level: the fear and excitement, the internal resistance, the practical realities, and the confidence required to move forward before everything feels certain. My clients benefit not only from my professional experience and education, but from knowing I have lived the process, successfully.
-
-	I am proof that meaningful reinvention is possible at any stage of a career and that change, when approached with intention and support, can become the gateway to fulfillment rather than a source of fear.
-	</p-->
-
-<!--/div-->
-<br />
-<center><a style="font-size: 16px; color: #942224; font-family: bradley hand ITC regular;"><strong>“let’s get in touch”</strong></a> <a title="email Odilia" href="mailto:odilia@breakthroughperspectives.com" style="width: 1048px; color: #942224;"> &nbsp;Odilia@breakthroughperspectives.com</a> or 619-851-9976 </center>
-<br /> 
-
+			</td>
+		</tr>		
+		<tr>
+			<td  style="width: 900px; margin: auto; padding-left: 30px; font-family: Trebuchet MS, verdana, sans-serif; font-size: 14px; color: black;">
+				<br />
+				I am your strategic thinking partner who helps you uncover clarity, build confidence, and move forward 
+				with intention.
+				<br />
+				Change isn’t going away! With the right perspective, it becomes a catalyst rather than a constraint.
+				<br /><br />
+				<center><a style="font-size: 16px; color: #942224; font-family: bradley hand ITC regular;"><strong>“let’s get in touch”</strong></a> <a title="email Odilia" href="mailto:odilia@breakthroughperspectives.com" style="width: 1048px; color: #942224;"> &nbsp;Odilia@breakthroughperspectives.com</a> or 619-851-9976 </center>
+				<br /> 
+			</td>
+		</tr>
+	</table>
+	
 <!--table width="100%" style=" position: relative; top: -0px;">
 	<tr>
 		<td><center><img src="Certifications/CEC Career Coach Certification Badge 2025.png" alt="CEC Career Coach Certification" width="100" height="100" border="0"></center></td>		
@@ -256,19 +280,13 @@ function myFunction()
 	function myFunction() 
 	{
 	  let x = null;
-	  if (document.documentElement.scrollTop > 125)
+	  if (document.documentElement.scrollTop > 250)
 	  {
-		//document.getElementById("myP").innerHTML = "";
-		x = document.getElementById("BP_logo");
-		if (x)
-			x.style.display = 'none';
+		document.getElementById("myP").innerHTML = "";
 	  }
 	  else
 	  {
-		//document.getElementById("myP").innerHTML = "<center> Breakthrough  Perspectives<br><a class=\"pixText2\">Your Source for Insight</center></div>";
-		x = document.getElementById("BP_logo");
-		if (x)
-			x.style.display = 'block';
+		document.getElementById("myP").innerHTML = "<center> Breakthrough  Perspectives<br><a class=\"pixText2\">Your Source for Insight</center></div>";
 	  }
 	  
     }
@@ -277,6 +295,3 @@ function myFunction()
 
 </body>
 </html>
-
-
-

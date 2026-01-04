@@ -11,9 +11,11 @@
 		font-family: Trebuchet MS, verdana, sans-serif;
 		font-size: 14px;
 		color: #000000;
-		min-width: 900px; 
-		max-width: 900px; 
-		margin: auto;
+		min-width: 100%; 
+		//max-width: 900px; 
+		margin-left: auto;
+		margin-right: auto;
+		//margin: auto;
 	}
 	.imageBack
 	{
@@ -28,8 +30,10 @@
 		background-attachment: fixed;
 		/* Centers the image on the page */ 
 		background-position: center; 
-		width: 900px;
-		height: 900px;
+	//	width: 900px;
+		height: 997px;
+	//	margin-left: auto;
+	//	margin-right: auto;
 	}
 	.top-container 
 	{
@@ -39,15 +43,20 @@
 	}
 	.header 
 	{
-	  position: sticky;
-	  top: 0;
-	  padding: 10px 16px;
-	  background: #EDF4FC;
-	  color: #f1f1f1;
+		  position: sticky;
+		  top: 0;
+		  //padding: 10px 16px;
+		  background: #EDF4FC;
+		  color: #f1f1f1;
+		  min-width: 900px;
 	}
 	.content 
 	{
-	  padding: 0px;
+		padding: 0px;
+		width: 100%;
+		//height: 572px;
+		margin: auto;
+		min-width: 900px;
 	}
 	button-link 
 	{
@@ -110,7 +119,8 @@
 		font-size: 48px;
 		vertical-align: middle;
 		position: relative;
-		top: 325px;
+		top: 350px;
+		color: white
 	}
 	.pixText2 
 	{
@@ -125,18 +135,69 @@
 		vertical-align: middle; 
 		position: relative; top: 300px;"		
 	}
-
+	.table-container 
+	{
+		display: flex;       		/* Enables Flexbox layout */
+		justify-content: center; 	/* Optional: Centers the tables horizontally in the container */
+		align-items: center; 		/* Aligns the tables vertically along the cross axis */
+	//	gap: 10px;           		/* Optional: Adds space between the tables */
+		width: 900px; 
+		background: #EDF4FC; 
+		margin: auto;
+	}
+	
 </style>
 </head>
+
+<script language="JavaScript" type="text/javascript">
+	
+function CheckForm(val, ele)
+{
+	//var value=val; //document.Contact.givenname.value;
+	//alert("checking form "+value);
+	//return;
+	//var x = ele;
+/*	
+	if (val == "" && ele == "givenname") { //document.Contact.givenname.value == "") {
+		alert("Please enter your first name");
+		return;
+	}
+	else if (val == "" && ele == "name") { //document.Contact.name.value == "") {
+		alert("Please enter your last name");
+		return;
+	}
+	else if (val == "" && ele == "email") { //document.Contact.email.value == "") {
+		alert("Please enter your e-mail address");
+		return;
+	}
+	else if (val == "" && ele == "phone") { //document.Contact.phone.value == "") {
+		alert("Please enter your phone number");
+		return;
+	}
+	else if (val == "" && ele == "city") { //document.Contact.city.value == "") {
+		alert("Please enter your City/State/Zip");
+		return;
+	}
+	else if (val == "" && ele == "comment") { //document.Contact.comment.value == "") {
+		alert("Please enter how can I assist you");
+		return;
+	}
+*/
+}
+	
+</script>
+
 <body>
 
 <div class="header" id="myHeader">
 
-	<table>
+	<div style="text-align: center; background: #C5D6E8; margin: auto;"><img src="./images/BP_w_logo_2026.png" height="129" width="472" alt="Breakthrough Perspective Logo" style="" /></div>
+
+	<table style="width: 900px; background: #EDF4FC; margin: auto;">
 		<tr>
 			<td>
 				<p style="font-family: Trebuchet MS, verdana, sans-serif; font-size: 18px; color: #000000; position: relative; top: 0px; left: 10px;"><strong>Odilia McLeod</strong></p>
-				<p style="font-size: 12px; color: black; position: relative; top: -15px; left: 22px;">Corporate Coach</p>
+				<p style="font-size: 12px; color: black; position: relative; top: -15px; left: 5px;">Certified Executive Coach</p>
 			</td>
 			<td>
 				<div style="position: relative; top: -13px; left: 100px;">
@@ -157,19 +218,20 @@
 
 <div class="content">
  
-	<!--div id="BP_logo" style="position: relative; left: -115px; top: 160px;"><center><img src="./images/BP_logoRoundC_2026.png" height="170" width="170" alt="Breakthrough Perspective Logo" style="position: absolute; opacity: 0.7;" /></center></div-->
-	
-	<div id="BP_logo" style="position: relative; left: -250px; top: 115px;"><center><img src="./images/BP_w_logo_2026.png" height="129" width="472" alt="Breakthrough Perspective Logo" style="position: absolute; opacity: 0.8;" /></center></div>
-	
-	<div class="imageBack"><!--div id="myP" class="pixText"><center> Breakthrough  Perspectives<br><a class="pixText2">Your Source for Insight</center></div--></div>
- 
-	<span style="font-size: 62px; color: #942224; font-family: bradley hand ITC regular;"><strong>A<a style="font-size: 28px;">bout Me</strong></a></span>
-	
-    <br />
-   
-	<table>
+	<div  style="width: 100%; margin: auto; background-color: #4F6439;><!-- height: 998px;"-->
+		<div class="imageBack"><div id="myP" class="pixText"><center> Breakthrough  Perspectives<br><a class="pixText2">Your Source for Insight</center></div></div>
+ 	</div>
+
+	<table style="width: 900px; margin: auto; font-family: Trebuchet MS, verdana, sans-serif; font-size: 14px; color:black;">
 		<tr>
-			<td width="50%">Change is a constant in the corporate world and it’s rarely gentle.
+			<td colspan="2" style="width: 900px; margin: auto; padding: 10px;">
+				<a style="width: 900px; margin: auto; font-size: 62px; color: #942224; font-family: segoe script;"><strong>A<a style="font-family: segoe script; font-size: 28px; color: #942224;">bout Me</strong></a></a>			
+			</td>
+		</tr>		
+		<tr>
+			<td width="50%" style="color: black; padding: 10px;">
+			
+				is a constant in the corporate world and it’s rarely gentle.
 
 				Over the course of my career, I’ve lived change from nearly every angle: small business and enterprise, public and private organizations, mergers and acquisitions, high-growth environments, restructures, and role reinvention. I’ve led teams through uncertainty, delivered as an individual contributor under pressure, and navigated transitions that required resilience, clarity, and courage.
 
@@ -191,150 +253,177 @@
 			<td width="50%"><img src="./images/Odi_About.JPG" height="458" width="443" alt="Odilia McLeod" /></td>
 		</tr>
 	</table>
-    <p>
-	I hold a Bachelor’s degree in Psychology from San Diego State University and a Master of Science in Psychology from Purdue University. I am also a Certified Executive Coach and Certified Career Coach through the Center for Executive Coaching (CEC), and a Social and Emotional Intelligence Certified Coach through the Institute for Social and Emotional Intelligence (ISEI).
-
-	But credentials alone don’t create insight. What gives me a distinct edge is the integration of education and lived corporate experience. Understanding both the organizational systems driving change and the human impact they create. I know how change affects confidence, performance, relationships, identity, and how to move through it with intention rather than reaction
-
-	<br /><br /><a style="font-size: 14px; color: #942224;"><strong>Living the Transition I Coach</strong></a><br /><br />
-
-	I am not only guiding others through career and life transitions, I am a living example of what’s possible.
-
-	After decades in the corporate world, I made the intentional decision to transition into an entirely new career. This shift required redefining success, letting go of familiar identities, navigating uncertainty, and building something aligned with my values and strengths. It demanded courage, resilience, and clarity: the very competencies I help my clients develop.
-
-	Having walked this path myself, I understand the complexity of change at a deeply personal level: the fear and excitement, the internal resistance, the practical realities, and the confidence required to move forward before everything feels certain. My clients benefit not only from my professional experience and education, but from knowing I have lived the process, successfully.
-
-	I am proof that meaningful reinvention is possible at any stage of a career and that change, when approached with intention and support, can become the gateway to fulfillment rather than a source of fear.
-	</p>
-
-<!--/div-->
-<br />
-<center><a style="font-size: 16px; color: #942224; font-family: bradley hand ITC regular;"><strong>“let’s get in touch”</strong></a> <a title="email Odilia" href="mailto:odilia@breakthroughperspectives.com" style="width: 1048px; color: #942224;"> &nbsp;Odilia@breakthroughperspectives.com</a> or 619-851-9976 </center>
-<br /> 
-
-<table width="100%" style=" position: relative; top: -0px;">
-	<tr>
-		<td><center><img src="Certifications/CEC Career Coach Certification Badge 2025.png" alt="CEC Career Coach Certification" width="100" height="100" border="0"></center></td>		
-		<td><center><img src="Certifications/CEC Executive Coach Certification ICF Level 2 Badges - 2025.png" alt="CEC Executive Coach Certification" width="100" height="100" border="0"></center></td>		
-		<td><center><img src="Certifications/Certified Executive Coach Badge.png" alt="Certified Executive Coach" width="100" height="100" border="0"></center></td>		
-		<td><center><img src="Certifications/ICF_Member.png" alt="ICF Member" width="100" height="100" border="0"></center></td>		
-		<td><center><img src="Certifications/ISEI_EI_Seal_smallJPG.jpg" alt="Social + Emotional Intelligence Certified Coach" width="100" height="100" border="0"></center></td>
-		<td><center><img src="Certifications/CTAcertified.gif" alt="Life Coach Training and Certification for Life Coaching" width="185" height="100" border="0"></center>
-	</tr>
-</table>
-
-<br /> 
-</div>
-
-<div><!-- starting Contact &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&  -->
-
-	<div style="font-size: 62px; color: #942224; font-family: bradley hand ITC regular; text-align: left; padding-left: 0px;"><strong>C<a style="font-size: 28px;">ontact</strong></a></div><br><br>
+	
+	<table style="width: 900px; margin: auto; font-family: Trebuchet MS, verdana, sans-serif; font-size: 14px; color:black;">
+		<tr>
+			<td colspan="2" style="width: 900px; font-size: 14px; color: black; padding: 10px;">
 				
-	<a style="font-size: 14px; color: #942224;"><strong>To contact Odilia for coaching services or questions please complete and submit this form:</a>
-	<br><br>
+				I hold a Bachelor’s degree in Psychology from San Diego State University and a Master of Science in Psychology from Purdue University. I am also a Certified Executive Coach and Certified Career Coach through the Center for Executive Coaching (CEC), and a Social and Emotional Intelligence Certified Coach through the Institute for Social and Emotional Intelligence (ISEI).
 
-				<!--div>< id="tinc_content"-->
+				But credentials alone don’t create insight. What gives me a distinct edge is the integration of education and lived corporate experience. Understanding both the organizational systems driving change and the human impact they create. I know how change affects confidence, performance, relationships, identity, and how to move through it with intention rather than reaction
+
+				<br /><br /><a style="font-size: 14px; color: #942224;"><strong>Living the Transition I Coach</strong></a><br /><br />
+
+				I am not only guiding others through career and life transitions, I am a living example of what’s possible.
+
+				After decades in the corporate world, I made the intentional decision to transition into an entirely new career. This shift required redefining success, letting go of familiar identities, navigating uncertainty, and building something aligned with my values and strengths. It demanded courage, resilience, and clarity: the very competencies I help my clients develop.
+
+				Having walked this path myself, I understand the complexity of change at a deeply personal level: the fear and excitement, the internal resistance, the practical realities, and the confidence required to move forward before everything feels certain. My clients benefit not only from my professional experience and education, but from knowing I have lived the process, successfully.
+
+				I am proof that meaningful reinvention is possible at any stage of a career and that change, when approached with intention and support, can become the gateway to fulfillment rather than a source of fear.
+				<br /><br />
+				<center><a style="font-size: 16px; color: #942224; font-family: segoe script;"><strong>“let’s get in touch”</strong></a> <a title="email Odilia" href="mailto:odilia@breakthroughperspectives.com" style="width: 1048px; color: #942224;"> &nbsp;Odilia@breakthroughperspectives.com</a> or 619-851-9976 </center>		
+			</td>
+		</tr>
+	</table>
+	<table style="width: 900px; margin: auto; font-family: Trebuchet MS, verdana, sans-serif; font-size: 14px; color:black;">
+		<tr>
+			<td width="25%"><center><img src="Certifications/CEC Career Coach Certification Badge 2025.png" alt="CEC Career Coach Certification" width="100" height="100"></center></td>		
+			<td width="25%"><center><img src="Certifications/Certified Executive Coach Badge.png" alt="Certified Executive Coach" width="100" height="100"></center></td>	
+			<td width="25%"><center><img src="Certifications/ICF_Member.png" alt="ICF Member" width="100" height="100"></center></td>		
+			<td width="25%"><center><img src="Certifications/ISEI_EI_Seal_smallJPG.jpg" alt="Social + Emotional Intelligence Certified Coach" width="100" height="100"></center></td>
+		</tr>
+		<tr>
+			<td colspan="4" style="width: 900px; margin: auto;">
 				
-					<!--table xmlns="http://www.w3.org/1999/xhtml" class="dborder" align="left" border="0" cellspacing="0" cellpadding="2" style="font-size:12px; color:#454545; font-family:Trebuchet MS,verdana,sans-serif; border: none; position: relative; top: 2px; width: 650px;">
-						<form name="Contact" accept-charset="utf-8" action="http://breakthroughperspectives.com/tinc" method="post" enctype="multipart/form-data" onsubmit="return CheckForm();"-->
-					<table width="100%" class="" align="left" cellspacing="0" cellpadding="2" style="font-size:12px; color:#454545; font-family:Trebuchet MS,verdana,sans-serif; border: none;">
-						<tr>
-							<td width="55%">
-								<p align="right"><b>First Name:&nbsp;&nbsp;&nbsp;</b></p>
-							</td>
-							<td>		
-								<input type="text" name="givenname" size="50" value=""></input>
-							</td>
-						</tr>
-						<tr>
-							<td width="55%">
-								<p align="right"><b>Last Name:&nbsp;&nbsp;&nbsp;</b></p>
-							</td>
-							<td>		
-								<input type="text" name="name" size="50" value="" bgcolor="#454545"></input>
-							</td>
-						</tr>	
-						<tr>
-							<td width="55%">		
-								<p align="right"><b>Email:&nbsp;&nbsp;&nbsp;</b></p>
-							</td>
-							<td>		
-								<input type="text" name="email" size="50" value=""></input>
-							</td>
-						</tr>		
-						<tr>
-							<td width="55%">		
-								<p align="right"><b>Daytime Phone:&nbsp;&nbsp;&nbsp;</b></p>
-							</td>
-							<td>		
-								<input type="text" name="phone" size="50" value=""></input>
-							</td>
-						</tr>		
-						<tr>
-							<td width="55%">		
-								<p align="right"><b>City/State/Zip:&nbsp;&nbsp;&nbsp;</b></p>
-							</td>
-							<td>		
-								<input type="text" name="city" size="50" value=""></input>
-							</td>
-						</tr>
-						<tr height="10">
-						</tr>
-						<tr>
-							<td width="55%">		
-								<p align="right" style="position: relative; top: -40px;"><b>Please let me know how&nbsp;&nbsp;&nbsp;<br>I may be of assistance:&nbsp;&nbsp;&nbsp;</b></p>
-							</td>
-							<td>		
-								<textarea align="right" class="textarea" name="comment" cols="50" rows="6"></textarea>
-							</td>
-						</tr>
-						<tr>
-							<td width="55%">
-							</td>
-							<td>
-								<p align="left"><input type="hidden" name="MAX_FILE_SIZE" value="10000"></input>
-								<input class="button" type="submit" value="Submit"></input>&nbsp;&nbsp;&nbsp;
-								<input class="button" type="reset"></input>
-								<input type="hidden" name="key" value="5SsOTvu1"></input></p>
-							</td>
-						</tr>
-						<tr>
-							<td width="55%">
-							
-								<div style="position: relative; top: 20px; font-size:14px; color:#454545; font-family:Trebuchet MS,verdana,sans-serif;"><!-- width: 670px;"-->
-								
-									<span align="left">						
-										<a style="font-size: 14px; color: #942224;"><strong>To contact Odilia personally:</strong></a><br><br>
-										E-mail:	 <a title="email Odilia" href="mailto:odilia@breakthroughperspectives.com">Odilia@breakthroughperspectives.com</a><br>
-										Call:	619.851.9976
-										<br><br>
-										<a style="font-size: 14px; color: #942224;"><strong>To schedule an appointment with Odilia:</strong></a><br><br>
-										<a title="Schedule appointment with Odilia" href="https://my.timedriver.com/3XJY1" target="_newtab"><img src="images/schedule.jpg" alt="Click here to schedule an appointment with Odilia" border="0" WIDTH="100" HEIGHT="88"></a><br>
-										<br>
-									</span>
-
-									<!--span align="left">						
-										<br>
-										<a title="Schedule appointment w/ Odilia" href="https://my.timedriver.com/0156406843b05143dcd77175322c7c9532d142">Click here to schedule an appointment with Odilia</a><br>
-									</span-->
-									
-								</div>
-								
-							</td>
-						</tr>				
-						</form>
-					</table>
-					
-				<!--/div>< id="tinc_content"-->
-			<!--/div><div class="content" id="content_container"-->
-		<!--/div><div id="sub_container2">
-	</div><div id="main_container">
-	 
-	 	<div id="footer"><div id="footer_text">Created with 1&amp;1 WebsiteBuilder</div></div>
+			</td>
+		</tr>
+	</table>
+	
+	<!--table xmlns="http://www.w3.org/1999/xhtml" class="dborder" align="left" border="0" cellspacing="0" cellpadding="2" style="font-size:12px; color:#454545; font-family:Trebuchet MS,verdana,sans-serif; border: none; position: relative; top: 2px; width: 650px;">
+		<form name="Contact" accept-charset="utf-8" action="http://breakthroughperspectives.com/tinc" method="post" enctype="multipart/form-data" onsubmit="return CheckForm();"-->
+	<div style="width: 100%; background: #EDF4FC; margin: auto; color: black;">
+	
+		<div style="width: 900px; margin: auto;"><a style="font-size: 62px; color: #942224; font-family: segoe script; padding-left: 10px;"><strong>C<a style="font-family: segoe script; font-size: 28px; color: #942224;">ontact</strong></a></div>
+				
+		<div style="width: 900px; margin: auto; font-family: Trebuchet MS,verdana,sans-serif; font-size: 14px; color: #942224; padding-left: 10px;"><strong>To contact Odilia for coaching services or questions please complete and submit this form:</strong></div><br />	
+	
+	<div class="table-container">
+	
+	<table style="width: 900px; margin: auto; font-size:12px; color:#454545; font-family:Trebuchet MS,verdana,sans-serif; float: left; float: top;">
+		<tr>
+			<td>
+				<br />
+				500 Terry Francine Street,
+				<br />
+				San Francisco, CA 94158
+			</td>
+		</tr>		
+		<tr>
+			<td width="50%" style="color: black; padding: 10px;">
+				<br />
+				Tel: 123-456-7890
+				<br />
+				Fax: 123-456-7890
+			</td>
+		</tr>		
+		<tr>
+			<td width="50%" style="color: black; padding: 10px;">
+				<br />
+			    info@mysite.com
+				<br />
+				Facebook<br />
+				Twitter<br />
+				Instagram<br />
+				YouTube<br />
+				© 2035 by Personal Life Coach. <br />
+				Powered and secured by Wix<br />
+				<br />
+			</td>
+		</tr>
+	</table>
+	
+	<table style="width: 900px; margin: auto; font-size:12px; color:#454545; font-family:Trebuchet MS,verdana,sans-serif; float: right;">
+		<tr>
+			<td>
+				<p align="right"><b>First Name:&nbsp;&nbsp;&nbsp;</b></p>
+			</td>
+			<td>		
+				<input type="text" name="givenname" id="givenname" size="50" value="" onblur="CheckForm(this.value, 'givenname');"></input>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p align="right"><b>Last Name:&nbsp;&nbsp;&nbsp;</b></p>
+			</td>
+			<td>		
+				<input type="text" name="name" id="name" size="50" value="" bgcolor="#454545" onblur="CheckForm(this.value, 'name');"></input>
+			</td>
+		</tr>	
+		<tr>
+			<td>		
+				<p align="right"><b>Email:&nbsp;&nbsp;&nbsp;</b></p>
+			</td>
+			<td>		
+				<input type="text" name="email" id="email" size="50" value="" onblur="CheckForm(this.value, 'email');"></input>
+			</td>
+		</tr>		
+		<tr>
+			<td>		
+				<p align="right"><b>Daytime Phone:&nbsp;&nbsp;&nbsp;</b></p>
+			</td>
+			<td>		
+				<input type="text" name="phone" id="phone" size="50" value="" onblur="CheckForm(this.value, 'phone');"></input>
+			</td>
+		</tr>		
+		<tr>
+			<td		
+				<p align="right"><b>City/State/Zip:&nbsp;&nbsp;&nbsp;</b></p>
+			</td>
+			<td>		
+				<input type="text" name="city" id="city" size="50" value="" onblur="CheckForm(this.value, 'city');"></input>
+			</td>
+		</tr>
+		<tr height="10">
+		</tr>
+		<tr>
+			<td>		
+				<p align="right" style="position: relative; top: -20px;"><b>Please let me know how&nbsp;&nbsp;&nbsp;<br>I may be of assistance:&nbsp;&nbsp;&nbsp;</b></p>
+			</td>
+			<td>		
+				<textarea align="right" class="textarea" name="comment" id="comment" cols="50" rows="6" onblur="CheckForm(this.value, 'comment');"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			</td>
+			<td>
+				<p align="left"><input type="hidden" name="MAX_FILE_SIZE" value="10000"></input>
+				<input class="button" type="submit" value="Submit"></input>&nbsp;&nbsp;&nbsp;
+				<input class="button" type="reset"></input>
+				<input type="hidden" name="key" value="5SsOTvu1"></input></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
 			
-</div><div id="container"-->
+				<div style="position: relative; top: 20px; font-size:14px; color:#454545; font-family:Trebuchet MS,verdana,sans-serif;"--><!-- width: 670px;"-->
+				
+					<!-- span align="left">						
+						<a style="font-size: 14px; color: #942224;"><strong>To contact Odilia personally:</strong></a><br><br>
+						E-mail:	 <a title="email Odilia" href="mailto:odilia@breakthroughperspectives.com">Odilia@breakthroughperspectives.com</a><br>
+						Call:	619.851.9976
+						<br><br>
+						<a style="font-size: 14px; color: #942224;"><strong>To schedule an appointment with Odilia:</strong></a><br><br>
+						<a title="Schedule appointment with Odilia" href="https://my.timedriver.com/3XJY1" target="_newtab"><img src="images/schedule.jpg" alt="Click here to schedule an appointment with Odilia" border="0" WIDTH="100" HEIGHT="88"></a><br>
+						<br>
+					</span-->
 
-<div><!-- ending Contact -->
+					<!--span align="left">						
+						<br>
+						<a title="Schedule appointment w/ Odilia" href="https://my.timedriver.com/0156406843b05143dcd77175322c7c9532d142">Click here to schedule an appointment with Odilia</a><br>
+					</span-->
+					
+				<!-- /div-->
+				
+			</td>
+		</tr>				
+		</form>
+	</table>
+	<div><!-- class="table-container" -->
+	</div>
+	
+<div><!--  class="content" -->
 
 <script>
 window.onscroll = function() {myFunction()};
@@ -357,62 +446,18 @@ function myFunction()
 	function myFunction() 
 	{
 	  let x = null;
-	  if (document.documentElement.scrollTop > 125)
+	  if (document.documentElement.scrollTop > 300)
 	  {
-		//document.getElementById("myP").innerHTML = "";
-		x = document.getElementById("BP_logo");
-		if (x)
-			x.style.display = 'none';
+		document.getElementById("myP").innerHTML = "";
 	  }
 	  else
 	  {
-		//document.getElementById("myP").innerHTML = "<center> Breakthrough  Perspectives<br><a class=\"pixText2\">Your Source for Insight</center></div>";
-		x = document.getElementById("BP_logo");
-		if (x)
-			x.style.display = 'block';
+		document.getElementById("myP").innerHTML = "<center> Breakthrough  Perspectives<br><a class=\"pixText2\">Your Source for Insight</center></div>";
 	  }
 	  
     }
 	
 </script>
 
-<script language="JavaScript" type="text/javascript">
-	
-function CheckForm()
-{
-	//var value=document.Contact.givenname.value;
-	//alert("checking form "+value);
-	//return false;
-	
-	if (document.Contact.givenname.value == "") {
-		alert("Please enter your first name");
-		return false;
-	}
-	if (document.Contact.name.value == "") {
-		alert("Please enter your last name");
-		return false;
-	}
-	if (document.Contact.email.value == "") {
-		alert("Please enter your e-mail address");
-		return false;
-	}
-	if (document.Contact.phone.value == "") {
-		alert("Please enter your phone number");
-		return false;
-	}
-	if (document.Contact.city.value == "") {
-		alert("Please enter your City/State/Zip");
-		return false;
-	}
-	if (document.Contact.comment.value == "") {
-		alert("Please enter how can I assist you");
-		return false;
-	}
-}
-	
-</script>
-
-
 </body>
 </html>
-

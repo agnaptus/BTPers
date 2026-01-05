@@ -1,3 +1,4 @@
+/*
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect form data
@@ -27,4 +28,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // If the form wasn't submitted via POST, redirect them
     header("Location: index.html");
 }
+
 ?>
+*/

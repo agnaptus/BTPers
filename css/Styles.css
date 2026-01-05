@@ -1,0 +1,197 @@
+	body
+	{
+		margin: 0;
+		font-family: Trebuchet MS, verdana, sans-serif;
+		font-size: 14px;
+		color: #000000;
+		min-width: 100%; 
+		//max-width: 900px; 
+		margin-left: auto;
+		margin-right: auto;
+		//margin: auto;
+	}
+	.imageBack
+	{
+		/* Specify the path to your image file */
+		background-image: url("../images/About.jpeg");
+		/* Optional: Control how the image is displayed */
+		/* Prevents the image from repeating */
+		background-repeat: no-repeat;
+		/* Ensures the entire background is covered, even if it has to stretch the image */
+		background-size: cover;
+		/* Fixes the image position so it doesn't scroll with the content */
+		background-attachment: fixed;
+		/* Centers the image on the page */ 
+		background-position: center; 
+	//	width: 900px;
+		height: 997px;
+	//	margin-left: auto;
+	//	margin-right: auto; 
+	}
+	.imageBackAbout
+	{
+		/* Specify the path to your image file */
+		background-image: url("../images/home_page.jpg");
+		/* Optional: Control how the image is displayed */
+		/* Prevents the image from repeating */
+		background-repeat: no-repeat;
+		/* Ensures the entire background is covered, even if it has to stretch the image */
+		background-size: cover;
+		/* Fixes the image position so it doesn't scroll with the content */
+		background-attachment: fixed;
+		/* Centers the image on the page */ 
+		background-position: center; 
+	//	width: 900px;
+		height: 572px;
+	//	margin-left: auto;
+	//	margin-right: auto;
+	}
+	.top-container 
+	{
+	  background-color: #f1f1f1;
+	  padding: 30px;
+	  text-align: center;
+	}
+	.header 
+	{
+		  position: sticky;
+		  top: 0;
+		  //padding: 10px 16px;
+		  background: #EDF4FC;
+		  color: #f1f1f1;
+		  min-width: 900px;
+		  background: linear-gradient(to right, #010134, #4478F8);
+	}
+	.content 
+	{
+		padding: 0px;
+		width: 100%;
+		//height: 572px;
+		margin: auto;
+		min-width: 900px;
+	}
+	button-link 
+	{
+		background-color: #04AA6D; /* Green background */
+		border: none; /* Remove default border */
+		color: white; /* White text color */
+		padding: 15px 32px; /* Spacing inside the button */
+		text-align: center; /* Center the text */
+		text-decoration: none; /* Remove underline from link */
+		display: inline-block; /* Allows padding and margins */
+		font-size: 16px; /* Adjust font size */
+		cursor: pointer; /* Change cursor to a hand icon on hover */
+		border-radius: 8px; /* Rounded corners */
+	}
+	.button-link:hover 
+	{
+		background-color: dodgerblue; /* Change color on hover */
+	}
+	.menuButton
+	{
+		border: none; 
+		background-color: transparent; //#26419F; 
+		font-family: Trebuchet MS, verdana, sans-serif;
+		font-size: 16px;
+		color: gray; //#A40006;		
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		cursor: pointer; /* Changes cursor to a hand icon */
+		transition: background-color 0.3s ease; /* Smooth transition for color change */
+		padding-right: 28px;
+	}
+	.menuButton:hover 
+	{
+	//	background-color: #4CAF50; /* New background color (green) */
+		color: #D6A94C;
+	}
+	.menuSelectedButton
+	{
+		border: none; 
+		background-color: transparent; //#26419F; 
+		font-family: Trebuchet MS, verdana, sans-serif;
+		font-size: 16px;
+		color: #D6A94C;		
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		cursor: pointer; /* Changes cursor to a hand icon */
+		transition: background-color 0.3s ease; /* Smooth transition for color change */
+		padding-right: 28px;
+	}
+	.menuSelectedButton:hover 
+	{
+	//	background-color: #4CAF50; /* New background color (green) */
+		color: black; //#A40006;
+	}
+	.pixText 
+	{
+		font-family: Cooper Black;
+		font-size: 48px;
+		vertical-align: middle;
+		position: relative;
+		top: 350px;
+		color: white
+	}
+	.pixText2 
+	{
+		font-family: Brush Script MT;
+		font-size: 42px;
+		color: white;
+	}
+	.showText
+	{
+		font-family: Stencil Regular; 
+		font-size: 96px; 
+		vertical-align: middle; 
+		position: relative; top: 300px;"		
+	}
+	.table-container 
+	{
+		display: flex;       		/* Enables Flexbox layout */
+		justify-content: center; 	/* Optional: Centers the tables horizontally in the container */
+		align-items: center; 		/* Aligns the tables vertically along the cross axis */
+	//	gap: 10px;           		/* Optional: Adds space between the tables */
+		width: 900px; 
+		background: #EDF4FC; 
+		margin: auto;
+	}
+	.textShadow
+	{
+		text-shadow: 5px 5px 5px #c0c0c0; //, 10px 10px; #c0c0c0;
+		font-size: 92px;
+		color: #942224;
+		font-family: brush script MT;
+		padding-left: 10px;"
+	}
+	.ContacMenuButton
+	{
+		border: none; 
+		background-color: transparent; //#26419F; 
+		font-family: Trebuchet MS, verdana, sans-serif;
+		font-size: 16px;
+		color: #A40006;		
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		cursor: pointer; /* Changes cursor to a hand icon */
+		transition: background-color 0.3s ease; /* Smooth transition for color change */
+		padding-right: 28px;
+	}
+	.ContacMenuButton:hover 
+	{
+		color: #D6A94C;
+	}
+	.header2
+	{
+		font-family: brush script MT;
+		font-size: 42px;
+		color: #942224;
+	}
+	.subTitle
+	{
+		font-family: brush script MT; 
+		font-size: 24px; 
+		color: #942224;
+	}

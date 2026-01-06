@@ -1,8 +1,8 @@
 	body
 	{
 		margin: 0;
-		font-family: Trebuchet MS, verdana, sans-serif;
-		font-size: 14px;
+		font-family: arial, verdana, sans-serif;
+		font-size: 16px;
 		color: #000000;
 		min-width: 100%; 
 		//max-width: 900px; 
@@ -99,7 +99,7 @@
 		display: inline-block;
 		cursor: pointer; /* Changes cursor to a hand icon */
 		transition: background-color 0.3s ease; /* Smooth transition for color change */
-		padding-right: 28px;
+		padding-right: 50px;
 	}
 	.menuButton:hover 
 	{
@@ -170,7 +170,7 @@
 		border: none; 
 		background-color: transparent; //#26419F; 
 		font-family: Trebuchet MS, verdana, sans-serif;
-		font-size: 16px;
+		font-size: 18px;
 		color: #A40006;		
 		text-align: center;
 		text-decoration: none;
@@ -186,12 +186,12 @@
 	.header2
 	{
 		font-family: brush script MT;
-		font-size: 42px;
+		font-size: 46px;
 		color: #942224;
 	}
 	.subTitle
 	{
 		font-family: brush script MT; 
-		font-size: 24px; 
+		font-size: 28px; 
 		color: #942224;
 	}

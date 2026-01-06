@@ -60,7 +60,7 @@ function CheckForm()
 	<table style="width: 900px; margin: auto;">
 		<tr>
 			<td>
-				<p style="font-family: Trebuchet MS, verdana, sans-serif; font-size: 18px; color: #942224; position: relative; top: 0px; left: 7px;"><strong>Odilia McLeod</strong></p>
+				<p style="font-family: Trebuchet MS, verdana, sans-serif; font-size: 20px; color: #D6A94C;; position: relative; top: 0px; left: 7px;"><strong>Odilia McLeod</strong></p>
 				<p style="font-size: 12px; color: white; position: relative; top: -15px; left: 6px;">Certified Execute Coach</p>
 			</td>
 			<td>
@@ -173,7 +173,6 @@ function CheckForm()
 </table-->
 
 <br /> 
-
 	
 	<div style="width: 100%; background: #EDF4FC; margin: auto; color: black;">
 	
@@ -183,9 +182,13 @@ function CheckForm()
 	
 	<div class="table-container">
 	
-	<table style="width: 300px; margin: auto; font-size:12px; color:#454545; font-family:Trebuchet MS,verdana,sans-serif; float: left; float: top;">
+	<table style="width: 300px; margin: auto; background-color: #4478F8; font-size: 16px; color: white; font-family: arial,verdana,sans-serif; float: left; vertical-align: top;">
 		<tr>
-			<td width="50%" style="color: black; padding: 10px;">
+			<td width="50%" style="padding: 10px; height: 40px;">
+			</td>
+		</tr>		
+		<tr>
+			<td width="50%" style="padding: 10px;">
 				<br />
 				P.O. Box 78421,
 				<br />
@@ -193,15 +196,15 @@ function CheckForm()
 			</td>
 		</tr>		
 		<tr>
-			<td width="50%" style="color: black; padding: 10px;">
+			<td width="50%" style="padding: 10px;">
 				<br />
 				Tel: (619)-851-9976
 			</td>
 		</tr>		
 		<tr>
-			<td width="50%" style="color: black; padding: 10px;">
+			<td width="50%" style="padding: 10px;">
 				<br />
-			    info@mysite.com
+			    info@BreakthroughPerspectives.com
 				<br />
 				Facebook<br />
 				LinkedIn<br />
@@ -211,9 +214,13 @@ function CheckForm()
 				<br />
 			</td>
 		</tr>
+		<tr>
+			<td width="50%" style="padding: 10px; height: 20px;">
+			</td>
+		</tr>		
 	</table>
 	
-	<table style="width: 600px; font-size:12px; color:#454545; font-family:Trebuchet MS,verdana,sans-serif; float: right;"
+	<table style="width: 600px; font-size:16px; color:#838383; font-family: arial,sans-serif; float: right;"
 		<form name="Contact" accept-charset="utf-8" action="./cgi-bin/mailform.php" method="post" enctype="multipart/form-data" onsubmit="return CheckForm();">
 		<tr>
 			<td>
@@ -249,10 +256,18 @@ function CheckForm()
 		</tr>		
 		<tr>
 			<td		
-				<p align="right">City/State/Zip:&nbsp;&nbsp;&nbsp;</p>
+				<p align="right"  style="padding-top: 36px; position: relative; top: -14px;">Please give me more info:&nbsp;&nbsp;&nbsp;</p>
 			</td>
 			<td>		
-				<input type="text" name="city" id="city" size="50" value="" onchange="CheckForm(this.value, 'city');"></input>
+				<!--input type="text" name="city" id="city" size="50" value="" onchange="CheckForm(this.value, 'city');"></input-->
+				<select name="letMeKnow" id="letMeKnow" style="font-size: 16px; text-align: center; width: 384px; position: relative; top: -8px;">
+				  <option value="">Please Select One</option>
+				  <option value="1"> &nbsp; selection 1&nbsp;</option>
+				  <option value="2"> &nbsp; selection 2 &nbsp;</option>
+				  <option value="3"> &nbsp; selection 3 &nbsp;</option>
+				  <option value="4"> &nbsp; selection 4 &nbsp;</option>
+				  <option value="5"> &nbsp; Other &nbsp;</option>
+				</select>
 			</td>
 		</tr>
 		<tr height="10">

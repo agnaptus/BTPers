@@ -5,56 +5,15 @@
 <title>About Odilia</title>
 
 	<link rel="stylesheet" type="text/css" media="all" href="./css/Styles.css">
+	<script type="text/javascript" src="./scripts/contactTable.js"></script>
 
 </head>
-
-<script language="JavaScript" type="text/javascript">
-	
-function CheckForm()
-{
-	//var value = document.getElementById("givenname").value;
-	//alert("checking form "+value);
-	//return false;
-	
-	if (document.getElementById("givenname").value == "")
-	{
-		alert("Please enter your first name");
-		return false;
-	}
-	else if (document.getElementById("name").value == "")
-	{
-		alert("Please enter your last name");
-		return false;
-	}
-	else if (document.getElementById("email").value == "")
-	{
-		alert("Please enter your e-mail address");
-		return false;
-	}
-	else if (document.getElementById("phone").value == "")
-	{
-		alert("Please enter your phone number");
-		return false;
-	}
-	else if (document.getElementById("city").value == "")
-	{
-		alert("Please enter your City/State/Zip");
-		return false;
-	}
-	else if (document.getElementById("comment").value == "")
-	{
-		alert("Please enter how can I assist you");
-		return false;
-	}
-}
-		
-</script>
 
 <body>
 
 <div class="header" id="myHeader">
 
-	<div style="text-align: center; margin: auto;"><img src="./images/BP_w_logo_2026.png" height="129" width="472" alt="Breakthrough Perspective Logo" />
+	<div style="text-align: center; margin: auto;"><img src="./images/BP_w_logo_2026arrow.png" height="129" width="472" alt="Breakthrough Perspective Logo" />
 
 	<table style="width: 900px; margin: auto;">
 		<tr>
@@ -86,7 +45,7 @@ function CheckForm()
 		<div class="imageBack"><div id="myP" class="pixText"><center> Breakthrough  Perspectives<br><a class="pixText2">Your Source for Insight</center></div></div>
  	</div>
 
-	<table style="width: 900px; margin: auto; font-family: arial, verdana, sans-serif; font-size: 16px; color: #838383;">
+	<table class="tableText">
 		<tr>
 			<td colspan="2" style="width: 900px; margin: auto; padding: 10px;">
 				<a class="textShadow"><strong>A</strong><a class="header2">bout Me</a></a>			
@@ -112,7 +71,7 @@ function CheckForm()
 		</tr>
 	</table>
 	
-	<table style="width: 900px; margin: auto; font-family: arial, verdana, sans-serif; font-size: 16px; color: #838383; vertical-align: top;">
+	<table class="tableText" style="vertical-align: top;">
 		<tr>
 			<td colspan="2" style="width: 900px; font-family: arial; font-size: 16px; color: #838383; padding: 10px; vertical-align: top;">			
 						
@@ -141,7 +100,7 @@ function CheckForm()
 		</tr>
 	</table>
 	<br />
-	<table style="width: 900px; margin: auto; font-family: arial, verdana, sans-serif; font-size: 16px; color:black;">
+	<table  class="tableText">
 		<tr>
 			<td width="25%"><center><img src="Certifications/Certified Executive Coach Badge.png" alt="Certified Executive Coach" width="150" height="150"></center></td>	
 			<td width="25%"><center><img src="Certifications/CEC Career Coach Certification Badge 2025.png" alt="CEC Career Coach Certification" width="150" height="150"></center></td>		
@@ -164,7 +123,7 @@ function CheckForm()
 	
 	<div class="table-container">
 	
-	<table style="width: 300px; margin: auto; background-color: #4478F8; font-size: 16px; color: white; font-family: arial,verdana,sans-serif; float: left; vertical-align: top;">
+	<table class="tableText" style="width: 300px; background-color: #010134; color: white; float: left; vertical-align: top;">
 		<tr>
 			<td width="50%" style="padding: 10px; height: 40px;">
 			</td>
@@ -188,8 +147,8 @@ function CheckForm()
 				<br />
 			    info@BreakthroughPerspectives.com
 				<br />
-				Facebook<br />
-				LinkedIn<br />
+				<br />
+				LinkedIn<br /><br />
 				Instagram<br />
 				<br /><br />
 				© 2026 by Breakthrough Perspectives. <br />
@@ -197,147 +156,86 @@ function CheckForm()
 			</td>
 		</tr>
 		<tr>
-			<td width="50%" style="padding: 10px; height: 20px;">
+			<td width="50%" style="padding: 10px; height: 50px;">
 			</td>
 		</tr>		
 	</table>
 	
-	<table style="width: 600px; font-size:16px; color:#838383; font-family: arial,sans-serif; float: right;"
-		<form name="Contact" accept-charset="utf-8" action="./cgi-bin/mailform.php" method="post" enctype="multipart/form-data" onsubmit="return CheckForm();">
+	<table class="tableText" style="width: 600px; float: right;">
 		<tr>
 			<td>
-				<p align="right">First Name:&nbsp;&nbsp;&nbsp;</p>
+			<form id="Contact" name="Contact" accept-charset="utf-8" action="./cgi-bin/mailformespecial.php" method="post" enctype="multipart/form-data" onsubmit="return CheckForm();">
+				<div class="input-container" style="padding-top: 0px;">
+					<input type="text" id="input1" placeholder="First Name" size="45" autocomplete="on" onchange="validateOneInput(this)">
+					<span class="tooltip-text">Please enter your first name</span>
+				</div>				
 			</td>
-			<td>		
-				<input type="text" name="givenname" id="givenname" size="50" value="" onchange="CheckForm(this.value, 'givenname');"></input>
-			</td>
-		</tr>
+		</tr>				
 		<tr>
 			<td>
-				<p align="right">Last Name:&nbsp;&nbsp;&nbsp;</p>
+				<div class="input-container">
+					<input type="text" id="input2" placeholder="Last Name" size="45" autocomplete="on" onchange="validateOneInput(this)">
+					<span class="tooltip-text">Please enter your last name</span>
+				</div>
 			</td>
-			<td>		
-				<input type="text" name="name" id="name" size="50" value="" bgcolor="#454545" onchange="CheckForm(this.value, 'name');"></input>
-			</td>
-		</tr>	
-		<tr>
-			<td>		
-				<p align="right">Email:&nbsp;&nbsp;&nbsp;</p>
-			</td>
-			<td>		
-				<input type="text" name="email" id="email" size="50" value="" onchange="CheckForm(this.value, 'email');"></input>
-			</td>
-		</tr>		
-		<tr>
-			<td>		
-				<p align="right">Daytime Phone:&nbsp;&nbsp;&nbsp;</p>
-			</td>
-			<td>		
-				<input type="text" name="phone" id="phone" size="50" value="" onchange="CheckForm(this.value, 'phone');"></input>
-			</td>
-		</tr>		
-		<tr>
-			<td		
-				<p align="right"  style="padding-top: 36px; position: relative; top: -14px;">Please give me more info:&nbsp;&nbsp;&nbsp;</p>
-			</td>
-			<td>		
-				<!--input type="text" name="city" id="city" size="50" value="" onchange="CheckForm(this.value, 'city');"></input-->
-				<select name="letMeKnow" id="letMeKnow" style="font-size: 16px; text-align: center; width: 384px; position: relative; top: -8px;">
-				  <option value="">Please Select One</option>
-				  <option value="1"> &nbsp; selection 1&nbsp;</option>
-				  <option value="2"> &nbsp; selection 2 &nbsp;</option>
-				  <option value="3"> &nbsp; selection 3 &nbsp;</option>
-				  <option value="4"> &nbsp; selection 4 &nbsp;</option>
-				  <option value="5"> &nbsp; Other &nbsp;</option>
-				</select>
-			</td>
-		</tr>
-		<tr height="10">
-		</tr>
-		<tr>
-			<td>		
-				<p align="right" style="position: relative; top: -38px;">Please let me know how&nbsp;&nbsp;&nbsp;<br>I may be of assistance:&nbsp;&nbsp;&nbsp;</p>
-			</td>
-			<td>		
-				<textarea align="right" class="textarea" name="comment" id="comment" cols="50" rows="6" onchange="CheckForm(this.value, 'comment');"></textarea>
-			</td>
-		</tr>
+		</tr>				
 		<tr>
 			<td>
+				<div class="input-container">
+					<input type="text" id="input3" placeholder="e-mail address" size="45" autocomplete="on" onchange="validateOneInput(this)">
+					<span class="tooltip-text">Please enter your e-mail address</span>
+				</div>
 			</td>
-			<td>
-				<p align="left"><input type="hidden" name="MAX_FILE_SIZE" value="10000"></input>
-				<input class="ContacMenuButton" type="submit" value="Submit"></input>&nbsp;&nbsp;&nbsp;
-				<input class="ContacMenuButton" type="reset"></input>
-				<input type="hidden" name="key" value="5SsOTvu1"></input></p>
-			</td>
-		</tr>
+		</tr>				
 		<tr>
 			<td>
-			
-				<!--div style="position: relative; top: 20px; font-size:14px; color:#454545; font-family:Trebuchet MS,verdana,sans-serif;">
-				
-					<!-- span align="left">						
-						<a style="font-size: 14px; color: #942224;"><strong>To contact Odilia personally:</strong></a><br><br>
-						E-mail:	 <a title="email Odilia" href="mailto:odilia@breakthroughperspectives.com">Odilia@breakthroughperspectives.com</a><br>
-						Call:	619.851.9976
-						<br><br>
-						<a style="font-size: 14px; color: #942224;"><strong>To schedule an appointment with Odilia:</strong></a><br><br>
-						<a title="Schedule appointment with Odilia" href="https://my.timedriver.com/3XJY1" target="_newtab"><img src="images/schedule.jpg" alt="Click here to schedule an appointment with Odilia" border="0" WIDTH="100" HEIGHT="88"></a><br>
-						<br>
-					</span-->
-
-					<!--span align="left">						
-						<br>
-						<a title="Schedule appointment w/ Odilia" href="https://my.timedriver.com/0156406843b05143dcd77175322c7c9532d142">Click here to schedule an appointment with Odilia</a><br>
-					</span-->
-					
-				<!-- /div -->
-				
+				<div class="input-container">
+					<input type="text" id="input4" placeholder="Phone Number" size="45" autocomplete="on" onchange="validateOneInput(this)">
+					<span class="tooltip-text">Please enter your phone number</span>
+				</div>
+			</td>
+		</tr>				
+		<tr>
+			<td>
+				<div class="input-container">
+					<select name="interestedIn" id="input5" style="height: 26px; font-size: 14px; text-align: left; width: 402px; position: relative; top: -0px; left: 42px;" onchange="validateOneInput(this)"><!--shareInput()"-->
+					  <option value="" style="text-align: left; font-size: 12px; color: #838383;">Select what are You Interested In</option>
+					  <option value="Professional Alignment"> Professional Alignment&nbsp;</option>
+					  <option value="Leadership Presence"> Leadership Presence&nbsp;</option>
+					  <option value="Navigating Professional Change"> Navigating Professional Change&nbsp;</option>
+					  <option value="Career Evolution/Transition"> Career Evolution/Transition&nbsp;</option>
+					  <option value="Success in a New Role"> Success in a New Role&nbsp;</option>
+					  <option value="Other"> Other &nbsp;</option>
+					</select>
+					<span class="tooltip-text" style="position: relative; top: -9px; left: 90px;">Please select what are you interested in</span>
+				</div>
+			</td>
+		</tr>				
+		<tr>
+			<td>
+				<div class="input-container" style="position: relative; top: -0px;">
+					<!--input type="text" id="input6" placeholder="How I May be of Assistance" size="45" autocomplete="on" style="position: relative; top: -30px; left: 42px;" onchange="validateOneInput(this)"-->
+					<textarea align="right" id="input6" name="comment" cols="54" rows="6" placeholder="How I May be of Assistance" style="font-family: arial; font-size: 14px; position: relative; top: -22px; left: 42px;" onchange="validateOneInput(this)"></textarea>
+					<span class="tooltip-text" style="position: relative; top: -37px; left: 88px;">Please Enter How I May be of Assistance</span>
+				</div>
+			</td>
+		</tr>				
+		<tr>
+			<td>
+				<div class="input-container" style="text-align: center; position: relative; top: -50px;">
+					<input class="ContacMenuButton" type="submit" value="Submit"></input>&nbsp;&nbsp;&nbsp;
+					<input class="ContacMenuButton" type="reset" onclick="resetForm()"></input>
+				</div>
 			</td>
 		</tr>				
 		</form>
-	</table>
-	
+	</table>	
 	</div><!-- class="table-container" -->
 	</div><!-- background: #EDF4FC; -->
 	
 </div><!--  class="content" -->
 
-<script>
-
-	window.onscroll = function() {myFunction()};
-
-	var header = document.getElementById("myHeader");
-	var sticky = header.offsetTop;
-
-	function myFunction() 
-	{
-	  if (window.pageYOffset > sticky) {
-		header.classList.add("sticky");
-	  } else {
-		header.classList.remove("sticky");
-	  }
-	}
-	
-</script>
-
-<script>
-
-	function myFunction() 
-	{
-	  let x = null;
-	  if (document.documentElement.scrollTop > 300)
-	  {
-		document.getElementById("myP").innerHTML = "";
-	  }
-	  else
-	  {
-		document.getElementById("myP").innerHTML = "<center> Breakthrough  Perspectives<br><a class=\"pixText2\">Your Source for Insight</center></div>";
-	  }
-	  
-    }
-</script>
+	<script type="text/javascript" src="./scripts/sloganHideable.js"></script>
 
 </body>
 </html>

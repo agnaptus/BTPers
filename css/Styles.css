@@ -34,7 +34,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
-		background-position: bottom; //center; 
+		background-position: center; 
 		//width: 900px;
 		height: 720px;
 		//margin-left: auto;
@@ -273,4 +273,5 @@
 	  color: #838383;
 	  font-size: 14px;
 	}	
+
 

@@ -30,25 +30,25 @@
 	}
 	.imageBackAbout
 	{
-		background-image: url("../images/About 1.png");
+		background-image: url("../images/About 1.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
-		background-position: center; 
-	//	width: 900px; /*actual W=3648 H=2736 */
-		height: 720px;
-	//	margin-left: auto;
-	//	margin-right: auto;
+		background-position: bottom; //center; 
+		//width: 900px; /*actual W=3648 H=2736 */
+		height: 633px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.imageBackServices
 	{
-		background-image: url("../images/Services.jpg");
+		background-image: url("../images/Services 4.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: center; 
 	//	width: 900px; /*actual W=3648 H=2736 */
-		height: 720px;
+		height: 1024px;
 	//	margin-left: auto;
 	//	margin-right: auto;
 	}
@@ -72,7 +72,7 @@
 	{
 		padding: 0px;
 		width: 100%;
-		//height: 572px;
+		//height: 633px; //572px;
 		margin: auto;
 		min-width: 900px;
 	}
@@ -221,8 +221,7 @@
 	}
 	.tableText
 	{
-		font-family: arial, 
-		verdana, sans-serif; 
+		font-family: arial, verdana, sans-serif; 
 		font-size: 16px; 
 		color: #838383;
 		width: 900px; 
@@ -242,7 +241,7 @@
 	{
 		font-size: 12px;
         visibility: hidden;
-        background-color: red; //#555;
+        background-color: #A40006;
         color: #fff;
         text-align: center;
         border-radius: 6px;
@@ -259,7 +258,7 @@
 
     /* Style for the error state */
     .input-error {
-        background-color: #F3F3F3; /* #ffdddd; Light red background */
+        background-color: #F0F0F0; /* #ffdddd; Light red background */
         border: 1px solid black; //#f44336;
     }
 

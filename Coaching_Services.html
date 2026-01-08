@@ -6,6 +6,37 @@
 
 	<link rel="stylesheet" type="text/css" media="all" href="./css/Styles.css">
 	<script type="text/javascript" src="./scripts/contactTable.js"></script>
+	
+	<style>
+	
+	.tooltip_2
+	{
+		position: relative;
+		display: inline-block;
+		//border-bottom: 1px dotted black; /* Add dots under the hoverable text */
+		cursor: pointer;
+		bacground-color: lightblue;
+	}	
+	.tooltiptext
+	{
+		font-family: arial;
+		font-size: 16px;
+		color: #838383
+		width: 100px;
+		visibility: hidden;
+		opacity: 0;
+		padding: 5px 0;
+		border-radius: 6px;
+		position: absolute;
+		z-index: 1;		
+	}
+	.tooltip:hover. tooltiptext
+	{
+		visibility: visible;
+		opacity: 1;
+	}
+	
+	</style>
 
 </head>
 
@@ -13,7 +44,7 @@
 
 <div class="header" id="myHeader">
 
-	<div style="text-align: center; margin: auto;"><img src="./images/BP_w_logo_2026arrow2.png" height="129" alt="Breakthrough Perspective Logo" />
+	<div style="text-align: center; margin: auto;"><img src="./images/BP_topPagesLogo_2026.png" height="129" alt="Breakthrough Perspective Logo" />
 
 	<table style="width: 900px; margin: auto;">
 		<tr>
@@ -41,28 +72,93 @@
 
 <div class="content">
  
-	<div  style="width: 100%; margin: auto; background-color: #4F6439;">
+	<div style="width: 100%; margin: auto; background-color: #4F6439;">
 		<div class="imageBackServices"><div id="myP" class="pixText"><center> Breakthrough  Perspectives<br><a class="pixText2">Your Source for Insight</center></div></div>
  	</div>
+	
+	<div style="width: 900px; margin: auto; padding: 10px;">
+		<a class="textShadow"><strong>S</strong><a class="header2">ervices</a></a>			
+	</div>
 
-	<table class="tableText">
+	<div style="width: 900px; margin: auto; padding: 10px;">
+		<a style="font-family: arial; font-size: 16px; color: #A40006;"><b>Please book a free consultation first</b></a> so we can assess how coaching can support your goals and so we identify the best approach and package that delivers the greatest impact for your objectives.
+	</div>
+	<br>
+	
+	<table class="tableText" style="border: 1px solid black; border-collapse: collapse">
 		<tr>
-			<td colspan="2" style="width: 900px; margin: auto; padding: 10px;">
-				<a class="textShadow"><strong>S</strong><a class="header2">ervices</a></a>			
+			<td style="width: 33%; border: 1px solid black;">
 			</td>
-		</tr>
-		<tr>
-			<td colspan="2" style="width: 900px; margin: auto; padding: 10px; height: 100px;">
+			<td style="width: 33%; padding-bottom: 10px; border: 1px solid black; text-align: center;">
+				<br><a class="subTitle">Free Consultation</a><br><br>
+
+				30 mins<br><br>
+				Let’s assess how coaching can<br>support your goals and identify<br>the package that delivers the<br>greatest impact for your<br>objectives<br><br>
+				<input class="ContacMenuButton" type="submit" value="BOOK"></input>
+						
 			</td>
-		</tr>
-		<tr>
-			<td>
-				<br /><br />
-				<center><a  class="subTitle">“let’s get in touch”</a> <a title="email Odilia" href="mailto:odilia@breakthroughperspectives.com" style="width: 1048px; color: #942224;"> &nbsp;Odilia@breakthroughperspectives.com</a> or 619-851-9976 </center>		
+			<td style="width: 33%; border: 1px solid black;">
 			</td>
 		</tr>
 	</table>
 	<br />
+	<div  class="tableText">
+		<a class="header2">Coaching Engagements</a>	<br /><br />
+		Choose the package that best advances your goals. Each program is available in 3 and 6 month formats, tailored to your specific objectives:
+	</div>
+	<br />	
+	<table class="tableText" style="border: 1px solid black; border-collapse: collapse">
+		<tr>
+			<td  style="width: 33%; border: 1px solid black; text-align: center;">
+				<!--div  class="tooltip_2"-->
+				<br><a class="subTitle">Professional Alignment</a><br><br><br><br>
+				Ensure your career direction,<br>values, and priorities are aligned<br>so decisions and actions are<br>intentional and sustainable<br><br>
+				<input class="ContacMenuButton" type="submit" value="DETAILS" title="The foundation. This focuses on clarity of values, strengths, goals, and direction, ensuring the individual is aligned internally before making or leading change."></input>
+				 <!--span class="tooltiptext" style="family-font: arial; font-size: 16px; color: #838383; text-align: center;"><b>The foundation.</b><br> This focuses on clarity of values, strengths, goals, and direction,<br> ensuring the individual is aligned internally before making or leading change.<img src="./images/favicon.ico" style="width: 20px;"></span-->
+				 <!--/div--><br><br>
+			</td>
+			<td style="width: 33%; padding-bottom: 10px; border: 1px solid black; text-align: center;">
+				<br><a class="subTitle">Leadership Presence</a><br><br><br><br>
+				Strengthen clarity, confidence,<br>and influence so you lead with<br>credibility and purpose in any<br>environment<br><br>
+				<input class="ContacMenuButton" type="submit" value="DETAILS"></input><br><br>
+						
+			</td>
+			<td style="width: 33%; border: 1px solid black; text-align: center;">
+				<a class="subTitle">Navigating Professional<br>Change</a><br><br> 				
+				Build readiness and resilience to<br>move through organizational<br>and career change with focus<br>and control<br><br>
+				<input class="ContacMenuButton" type="submit" value="DETAILS"></input><br>
+
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 33%; border: 1px solid black; text-align: center;">
+				<br><a class="subTitle">Career Evolution / Transition</a><br><br><br><br>
+				Supports deliberate career<br>progression, whether<br>advancing, pivoting, or<br>redefining your professional path<br><br>
+				<input class="ContacMenuButton" type="submit" value="DETAILS"></input><br><br>
+			</td>
+			<td style="width: 33%; padding-bottom: 10px; border: 1px solid black; text-align: center;">
+				<br><a class="subTitle">Success in a New Role</a><br><br><br><br>
+				Accelerates effectiveness and<br>confidence as you step into<br>expanded responsibilities or<br>unfamiliar leadership terrain<br><br>
+				<input class="ContacMenuButton" type="submit" value="DETAILS"></input><br><br>
+						
+			</td>
+			<td style="width: 33%; border: 1px solid black; text-align: center;">
+				<a class="subTitle">Build My Personalized<br>Engagement</a><br><br> 				
+				We partner to design a coaching<br>experience tailored to your<br>specific goals, challenges, and<br>career stage.<br><br>
+				<input class="ContacMenuButton" type="submit" value="DETAILS"></input><br>
+
+			</td>
+		</tr>
+	</table>
+	<br />
+	
+	
+	
+	
+	
+	
+	
+	<!-- ********************************* Contact Odilia Form --************************************* --> 
 	<div style="width: 100%; background: #EDF4FC; margin: auto; color: black;">
 	
 		<div style="width: 900px; margin: auto;"><a class="textShadow"><strong>C</strong><a  class="header2">ontact</a></div>

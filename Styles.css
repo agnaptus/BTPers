@@ -1,0 +1,275 @@
+	body
+	{
+		margin: 0;
+		font-family: arial, verdana, sans-serif;
+		font-size: 16px;
+		color: #000000;
+		min-width: 900px; 
+		//max-width: 900px; 
+		//margin-left: auto;
+		//margin-right: auto;
+		margin: auto;
+	}
+	.imageBack
+	{
+		/* Specify the path to your image file */
+		background-image: url("../images/home_page.jpg");
+		/* Optional: Control how the image is displayed */
+		/* Prevents the image from repeating */
+		background-repeat: no-repeat;
+		/* Ensures the entire background is covered, even if it has to stretch the image */
+		background-size: cover;
+		/* Fixes the image position so it doesn't scroll with the content */
+		background-attachment: fixed;
+		/* Centers the image on the page */ 
+		background-position: center; 
+	//	width: 955px;
+		height: 608px;
+	//	margin-left: auto;
+	//	margin-right: auto; 
+	}
+	.imageBackAbout
+	{
+		background-image: url("../images/About 1.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: bottom; //center; 
+		//width: 900px; /*actual W=3648 H=2736 */
+		height: 633px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.imageBackServices
+	{
+		background-image: url("../images/Services 4.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center; 
+	//	width: 900px; /*actual W=3648 H=2736 */
+		height: 1024px;
+	//	margin-left: auto;
+	//	margin-right: auto;
+	}
+	.top-container 
+	{
+	  background-color: #f1f1f1;
+	  padding: 30px;
+	  text-align: center;
+	}
+	.header 
+	{
+		  position: sticky;
+		  top: 0;
+		  //padding: 10px 16px;
+		  background: #EDF4FC;
+		  color: #f1f1f1;
+		  min-width: 900px;
+		  background: linear-gradient(to right, #010134, #4478F8);
+	}
+	.content 
+	{
+		padding: 0px;
+		width: 100%;
+		//height: 633px; //572px;
+		margin: auto;
+		min-width: 900px;
+	}
+	button-link 
+	{
+		background-color: #04AA6D; /* Green background */
+		border: none; /* Remove default border */
+		color: white; /* White text color */
+		padding: 15px 32px; /* Spacing inside the button */
+		text-align: center; /* Center the text */
+		text-decoration: none; /* Remove underline from link */
+		display: inline-block; /* Allows padding and margins */
+		font-size: 16px; /* Adjust font size */
+		cursor: pointer; /* Change cursor to a hand icon on hover */
+		border-radius: 8px; /* Rounded corners */
+	}
+	.button-link:hover 
+	{
+		background-color: dodgerblue; /* Change color on hover */
+	}
+	.menuButton
+	{
+		border: none; 
+		background-color: transparent; //#26419F; 
+		font-family: Trebuchet MS, verdana, sans-serif;
+		font-size: 16px;
+		color: gray; //#A40006;		
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		cursor: pointer; /* Changes cursor to a hand icon */
+		transition: background-color 0.3s ease; /* Smooth transition for color change */
+		padding-right: 50px;
+	}
+	.menuButton:hover 
+	{
+	//	background-color: #4CAF50; /* New background color (green) */
+		color: #D6A94C;
+	}
+	.menuSelectedButton
+	{
+		border: none; 
+		background-color: transparent; //#26419F; 
+		font-family: Trebuchet MS, verdana, sans-serif;
+		font-size: 16px;
+		color: #D6A94C;		
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		cursor: pointer; /* Changes cursor to a hand icon */
+		transition: background-color 0.3s ease; /* Smooth transition for color change */
+		padding-right: 28px;
+	}
+	.menuSelectedButton:hover 
+	{
+	//	background-color: #4CAF50; /* New background color (green) */
+		color: black; //#A40006;
+	}
+	.pixText 
+	{
+		font-family: Cooper Black;
+		font-size: 48px;
+		vertical-align: middle;
+		position: relative;
+		top: 350px;
+		color: white
+	}
+	.pixText2 
+	{
+		font-family: Brush Script MT;
+		font-size: 42px;
+		color: white;
+	}
+	.showText
+	{
+		font-family: Stencil Regular; 
+		font-size: 96px; 
+		vertical-align: middle; 
+		position: relative; top: 300px;"		
+	}
+	.table-container 
+	{
+		display: flex;       		/* Enables Flexbox layout */
+		justify-content: center; 	/* Optional: Centers the tables horizontally in the container */
+		align-items: center; 		/* Aligns the tables vertically along the cross axis */
+	//	gap: 10px;           		/* Optional: Adds space between the tables */
+		width: 900px; 
+		background: #EDF4FC; 
+		margin: auto;
+	}
+	input,textarea 
+	{	
+		font-family: arial, verdana, sans-serif;
+		font-size: 16px;
+		color: #000000;	
+	}
+	.tooltip 
+	{
+		display: none;
+		/* Add styling for your tooltip (background, color, padding, etc.) */
+		background-color: white;
+		color: black;
+		padding: 1px;
+		font-size: 11px;
+		//border-radius: 4px;
+		position: absolute; /* or relative, depending on your layout */
+		z-index: 100;
+	}		
+	.textShadow
+	{
+		text-shadow: 5px 5px 5px #c0c0c0; //, 10px 10px; #c0c0c0;
+		font-size: 92px;
+		color: #942224;
+		font-family: brush script MT;
+		padding-left: 10px;"
+	}
+	.ContacMenuButton
+	{
+		border: none; 
+		background-color: transparent; //#26419F; 
+		font-family: Trebuchet MS, verdana, sans-serif;
+		font-size: 18px;
+		color: #A40006;		
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		cursor: pointer; /* Changes cursor to a hand icon */
+		transition: background-color 0.3s ease; /* Smooth transition for color change */
+		padding-right: 28px;
+	}
+	.ContacMenuButton:hover 
+	{
+		color: #D6A94C;
+	}
+	.header2
+	{
+		font-family: brush script MT;
+		font-size: 46px;
+		color: #942224;
+	}
+	.subTitle
+	{
+		font-family: brush script MT; 
+		font-size: 28px; 
+		color: #942224;
+	}
+	.tableText
+	{
+		font-family: arial, verdana, sans-serif; 
+		font-size: 16px; 
+		color: #838383;
+		width: 900px; 
+		margin: auto;
+	}
+    .input-container 
+	{
+		font-size: 24px;
+        position: relative;
+        margin-bottom: 20px;
+		float: right;
+		padding-left: 150px;
+    }
+
+    /* Default style for the tooltip */
+    .tooltip-text 
+	{
+		font-size: 12px;
+        visibility: hidden;
+        background-color: #A40006;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 2px 2px 2px 2px;
+        position: absolute; //relative; //
+        z-index: 1;
+		top: 28px;
+        //bottom: 125%; /* Position the tooltip above the input */
+        left: 200px;
+        //margin-left: -60px; /* Center the tooltip */
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    /* Style for the error state */
+    .input-error {
+        background-color: #F0F0F0; /* #ffdddd; Light red background */
+        border: 1px solid black; //#f44336;
+    }
+
+    /* Class to show the tooltip */
+    .show-tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+	input::placeholder 
+	{
+	  font-family: arial; /* The placeholder's specific font */
+	  color: #838383;
+	  font-size: 14px;
+	}	

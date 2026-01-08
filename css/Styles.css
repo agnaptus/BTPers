@@ -30,15 +30,15 @@
 	}
 	.imageBackAbout
 	{
-		background-image: url("../images/About 1.jpg");
+		background-image: url("../images/About 1.png");
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: bottom; //center; 
-		//width: 900px; /*actual W=3648 H=2736 */
-		height: 633px;
-		margin-left: auto;
-		margin-right: auto;
+		//width: 900px;
+		height: 720px;
+		//margin-left: auto;
+		//margin-right: auto;
 	}
 	.imageBackServices
 	{
@@ -47,7 +47,7 @@
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: center; 
-	//	width: 900px; /*actual W=3648 H=2736 */
+	//	width: 900px;
 		height: 1024px;
 	//	margin-left: auto;
 	//	margin-right: auto;
@@ -273,3 +273,4 @@
 	  color: #838383;
 	  font-size: 14px;
 	}	
+

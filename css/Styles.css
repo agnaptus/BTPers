@@ -42,7 +42,7 @@
 	}
 	.imageBackAbout
 	{
-		background-image: url("../images/About 1.jpg");
+		background-image: url("../images/About 1.png");
 		background-repeat: no-repeat;
 		background-size: cover;
 		/*background-attachment: fixed; //makes image not display complete !!! */
@@ -309,3 +309,4 @@
 	  color: #838383;
 	  font-size: 14px;
 	}	
+

@@ -19,7 +19,7 @@
 	function myFunction() 
 	{
 	  let x = null;
-	  if (document.documentElement.scrollTop > 250)
+	  if (document.documentElement.scrollTop > 10)
 	  {
 		document.getElementById("myP").innerHTML = "";
 	  }

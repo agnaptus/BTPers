@@ -7,36 +7,40 @@
 	<link rel="stylesheet" type="text/css" media="all" href="./css/Styles.css">
 	<script type="text/javascript" src="./scripts/contactTable.js"></script>
 	
-	<style>
-	
-	.tooltip_2
-	{
-		position: relative;
-		display: inline-block;
-		//border-bottom: 1px dotted black; /* Add dots under the hoverable text */
-		cursor: pointer;
-		bacground-color: lightblue;
-	}	
-	.tooltiptext
-	{
-		font-family: arial;
-		font-size: 16px;
-		color: #838383
-		width: 100px;
-		visibility: hidden;
-		opacity: 0;
-		padding: 5px 0;
-		border-radius: 6px;
-		position: absolute;
-		z-index: 1;		
-	}
-	.tooltip:hover. tooltiptext
-	{
-		visibility: visible;
-		opacity: 1;
-	}
-	
-	</style>
+<style>
+
+.tooltip 
+{
+  position: relative;
+  display: inline-block;
+  //border-bottom: 1px dotted black;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.tooltiptext 
+{
+  font-size: 16px;
+  visibility: hidden;
+  width: 300px;
+  height: 200px;
+  background-color: #A40006;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  top: 40px;
+  left: -100px;
+  z-index: 10;
+}
+
+.tooltip:hover .tooltiptext 
+{
+  visibility: visible;
+}
+
+</style>
 
 </head>
 
@@ -68,13 +72,11 @@
 	</table>
 	</div>  
 	
-</div><!--  class="header" id="myHeader" -->
+</div><!--  class="header" id="myHeader" imageBackServices height="352" -->
 
 <div class="content">
  
-	<div style="width: 100%; margin: auto; background-color: #4F6439;">
-		<div class="imageBackServices"><div id="myP" class="pixText"><center> Breakthrough  Perspectives<br><a class="pixText2">Your Source for Insight</center></div></div>
- 	</div>
+		<div class="imageBackServices"><div id="myP" class="pixText" style="position: relative; top: 150px;"><center> Breakthrough  Perspectives<br><a class="pixText2">Your Source for Insight</center></div></div>
 	
 	<div style="width: 900px; margin: auto; padding: 10px;">
 		<a class="textShadow"><strong>S</strong><a class="header2">ervices</a></a>			
@@ -87,9 +89,9 @@
 	
 	<table class="tableText" style="border: 1px solid black; border-collapse: collapse">
 		<tr>
-			<td style="width: 33%; border: 1px solid black;">
-			</td>
-			<td style="width: 33%; padding-bottom: 10px; border: 1px solid black; text-align: center;">
+			<!--td style="width: 33%; border: 1px solid black;">
+			</td-->
+			<td style="width: 100%; padding-bottom: 10px; border: 1px solid black; text-align: center;">
 				<br><a class="subTitle">Free Consultation</a><br><br>
 
 				30 mins<br><br>
@@ -97,8 +99,8 @@
 				<input class="ContacMenuButton" type="submit" value="BOOK"></input>
 						
 			</td>
-			<td style="width: 33%; border: 1px solid black;">
-			</td>
+			<!--td style="width: 33%; border: 1px solid black;">
+			</td-->
 		</tr>
 	</table>
 	<br />
@@ -110,23 +112,26 @@
 	<table class="tableText" style="border: 1px solid black; border-collapse: collapse">
 		<tr>
 			<td  style="width: 33%; border: 1px solid black; text-align: center;">
-				<!--div  class="tooltip_2"-->
 				<br><a class="subTitle">Professional Alignment</a><br><br><br><br>
 				Ensure your career direction,<br>values, and priorities are aligned<br>so decisions and actions are<br>intentional and sustainable<br><br>
-				<input class="ContacMenuButton" type="submit" value="DETAILS" title="The foundation. This focuses on clarity of values, strengths, goals, and direction, ensuring the individual is aligned internally before making or leading change."></input>
-				 <!--span class="tooltiptext" style="family-font: arial; font-size: 16px; color: #838383; text-align: center;"><b>The foundation.</b><br> This focuses on clarity of values, strengths, goals, and direction,<br> ensuring the individual is aligned internally before making or leading change.<img src="./images/favicon.ico" style="width: 20px;"></span-->
-				 <!--/div--><br><br>
+				<div class="tooltip"><a class="ContacMenuButton">DETAILS</a>				
+				 <span class="tooltiptext"><br><b>The foundation.</b><br><br>This focuses on clarity of values,<br>strengths, goals, and direction,<br>ensuring the individual is aligned<br>internally before making or<br>leading change.</span>
+				 </div><br><br>
 			</td>
 			<td style="width: 33%; padding-bottom: 10px; border: 1px solid black; text-align: center;">
 				<br><a class="subTitle">Leadership Presence</a><br><br><br><br>
 				Strengthen clarity, confidence,<br>and influence so you lead with<br>credibility and purpose in any<br>environment<br><br>
-				<input class="ContacMenuButton" type="submit" value="DETAILS"></input><br><br>
+				<div class="tooltip"><a class="ContacMenuButton">DETAILS</a>				
+				 <span class="tooltiptext"><br><b>Builds on alignment.</b><br><br>Once clarity is established,<br>this area addresses how professionals<br>show up confidence,executive<br>presence,communication,.<br>and influence.</span>
+				 </div><br><br>
 						
 			</td>
 			<td style="width: 33%; border: 1px solid black; text-align: center;">
 				<a class="subTitle">Navigating Professional<br>Change</a><br><br> 				
 				Build readiness and resilience to<br>move through organizational<br>and career change with focus<br>and control<br><br>
-				<input class="ContacMenuButton" type="submit" value="DETAILS"></input><br>
+				<div class="tooltip"><a class="ContacMenuButton">DETAILS</a>				
+				 <span class="tooltiptext"><br><b>The transition skillset.</b><br><br>This supports individuals as they<br>manage uncertainty, ambiguity, and<br>organizational change, whether<br>change is chosen or imposed.</span>
+				 </div><br><br>
 
 			</td>
 		</tr>
@@ -134,40 +139,40 @@
 			<td style="width: 33%; border: 1px solid black; text-align: center;">
 				<br><a class="subTitle">Career Evolution / Transition</a><br><br><br><br>
 				Supports deliberate career<br>progression, whether<br>advancing, pivoting, or<br>redefining your professional path<br><br>
-				<input class="ContacMenuButton" type="submit" value="DETAILS"></input><br><br>
+				<div class="tooltip"><a class="ContacMenuButton">DETAILS</a>				
+				 <span class="tooltiptext"><br><b>The longer-term trajectory.</b><br><br>This area covers intentional growth,<br>reinvention, promotions, pivots,<br>or redefining success over time.</span>
+				 </div><br><br>
 			</td>
 			<td style="width: 33%; padding-bottom: 10px; border: 1px solid black; text-align: center;">
 				<br><a class="subTitle">Success in a New Role</a><br><br><br><br>
 				Accelerates effectiveness and<br>confidence as you step into<br>expanded responsibilities or<br>unfamiliar leadership terrain<br><br>
-				<input class="ContacMenuButton" type="submit" value="DETAILS"></input><br><br>
+				<div class="tooltip"><a class="ContacMenuButton">DETAILS</a>				
+				 <span class="tooltiptext"><br><b>The outcome-focused application.</b><br><br>This helps professionals land well,<br>establish credibility, build relationships,<br>and perform effectively in a new<br>or expanded role.</span>
+				 </div><br><br>
 						
 			</td>
 			<td style="width: 33%; border: 1px solid black; text-align: center;">
 				<a class="subTitle">Build My Personalized<br>Engagement</a><br><br> 				
 				We partner to design a coaching<br>experience tailored to your<br>specific goals, challenges, and<br>career stage.<br><br>
-				<input class="ContacMenuButton" type="submit" value="DETAILS"></input><br>
+				<div class="tooltip"><a class="ContacMenuButton">DETAILS</a>				
+				 <span class="tooltiptext"><br><!--b>The foundation.</b><br--><br>Together, we define the focus areas,<br>, pace, and outcomes to ensure<br>the engagement directly supports<br>your growth, effectiveness, and<br>successful outcomes.</span>
+				 </div><br><br>
 
 			</td>
 		</tr>
 	</table>
 	<br />
 	
-	
-	
-	
-	
-	
-	
-	<!-- ********************************* Contact Odilia Form --************************************* --> 
-	<div style="width: 100%; background: #EDF4FC; margin: auto; color: black;">
+	<!-- ********************************* Contact Odilia Form --************************************* #942224;--> 
+	<div style="width: 100%; margin: auto; color: black; background: linear-gradient(to right, #010134, #4478F8);"><!--background: #EDF4FC;"-->
 	
 		<div style="width: 900px; margin: auto;"><a class="textShadow"><strong>C</strong><a  class="header2">ontact</a></div>
 		<br />
-		<div style="width: 900px; margin: auto; font-family: brush script MT; font-size: 24px; color: #942224; padding-left: 10px;">To contact Odilia for coaching services or questions please complete and submit this form:</div><br />	
+		<div style="width: 900px; margin: auto; font-family: brush script MT; font-size: 24px; color: #D6A94C; padding-left: 10px;">To contact Odilia for coaching services or questions please complete and submit this form:</div><br />	
 	
-	<div class="table-container">
+	<div class="table-container" style="background: transparent;">
 	
-	<table class="tableText" style="width: 300px; background: linear-gradient(to top, #010134, #4478F8); color: white; float: left; vertical-align: top;">
+	<table class="tableText" style="width: 300px; color: white; float: left; vertical-align: top; background: transparent;">
 		<tr>
 			<td width="50%" style="padding: 10px; height: 40px;">
 			</td>
@@ -205,7 +210,7 @@
 		</tr>		
 	</table>
 	
-	<table class="tableText" style="width: 600px; float: right;">
+	<table class="tableText" style="width: 600px; float: right; background: transparent;">
 		<tr>
 			<td>
 			<form id="Contact" name="Contact" accept-charset="utf-8" action="./cgi-bin/mailformespecial.php" method="post" enctype="multipart/form-data" onsubmit="return CheckForm();">
@@ -266,15 +271,16 @@
 		<tr>
 			<td>
 				<div class="input-container" style="text-align: center; position: relative; top: -50px;">
-					<input class="ContacMenuButton" type="submit" value="Submit"></input>&nbsp;&nbsp;&nbsp;
-					<input class="ContacMenuButton" type="reset" onclick="resetForm()"></input>
+					<input class="SubmitButton" type="submit" value="Submit"></input>&nbsp;&nbsp;&nbsp;
+					<input class="SubmitButton" type="reset" onclick="resetForm()"></input>
 				</div>
 			</td>
 		</tr>				
 		</form>
-	</table>	
+	</table>
+	
 	</div><!-- class="table-container" -->
-	</div><!-- background: #EDF4FC; -->
+</div><!-- background: #EDF4FC; -->
 	
 </div><!--  class="content" -->
 

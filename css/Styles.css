@@ -48,7 +48,7 @@
 		/*background-attachment: fixed; //makes image not display complete !!! */
 		background-position: center; 
 		width: 100%; /*actual W=3648 H=2736 */
-		height: 633px;
+		height: 720px;
 		//margin-left: auto;
 		//margin-right: auto;
 		margin: auto;
@@ -309,4 +309,5 @@
 	  color: #838383;
 	  font-size: 14px;
 	}	
+
 

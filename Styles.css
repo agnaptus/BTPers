@@ -1,0 +1,691 @@
+    html.isPhone
+    {
+        -webkit-text-size-adjust: 100% !important;
+        text-size-adjust: 100% !important;
+    }
+    
+    html.isPhone
+    {
+        .textShadow, .textShadow2, .header2 
+        {
+            font-size: 60px !important; 
+            line-height: 1.2 !important; 
+        }
+        
+        .subTitle
+        {
+            font-size: 40px !important; 
+            line-height: 1.2 !important;
+        }
+        
+        .tableText
+        {
+            font-size: 30px !important; 
+            line-height: 1.2 !important;
+            position: relative;
+            top: -20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        .tableText-Contact
+        {
+            font-size: 21px !important; 
+            line-height: 1.2 !important;
+        }
+
+        .boxText
+        {
+            font-size: 22px !important; 
+            line-height: 1.2 !important;
+        }
+        
+        .resultsText, .SubmitPhoneButton
+    	{
+            font-size: 30px !important; 
+            line-height: 1.2 !important;
+    	}
+    	
+        .ZoomSched
+        {
+            margin-top: -42px !important;
+        }
+    }
+
+    .ZoomSched
+    {
+        padding-left: 2px;
+        margin-top: 0px;
+    }
+    
+    .my-white-link, .my-white-link:visited
+	{
+        color: white;
+    }
+	
+	.my-white-link:hover , .my-white-link:active
+	{
+        color: #D6A94C;	
+	}
+	
+    .my-wine-link, .my-wine-link:visited
+	{
+        color: #942224;
+    }
+	
+	.my-wine-link:hover , .my-wine-link:active
+	{
+        color: #D6A94C;	
+	}
+	
+	hr
+	{
+	     height: 1px;
+	     background-color: #3157C1;
+	}
+	
+	select, textarea 
+	{
+		padding-right: 2px; /* Set your own consistent padding */
+		background-color: #FFFFFF; /* Use your desired color (e.g., white) */
+		border: 1px solid #000000;
+	}
+
+	table 
+	{
+        table-layout: fixed; /* forces consistent column widths */
+        width: 100%;
+        font-family: "Inter", arial, verdana, sans-serif;
+        font-size: 16px;
+	}
+
+	td 
+	{
+	  vertical-align: top; /* or middle */
+	}
+	
+	body
+	{
+		font-family: "Inter", arial, verdana, sans-serif;
+		font-size: 16px;
+		color: #000000;
+		width: 100%;
+		min-width: 900px;
+		margin: auto;
+	}
+	
+    body, table, td, div, p 
+    { 
+        word-wrap: break-word; 
+        overflow-wrap: break-word; 
+    }	
+
+/* Phones only — excludes all iPads, even in split-screen  
+    @media (max-width: 600px)    */
+    @media only screen and (max-width: 600px) and (hover: none) and (pointer: coarse) and (device-width: 812px) 
+    {
+        .textShadow, .textShadow2, .header2 
+        {
+            font-size: 60px !important; 
+            line-height: 1.2 !important; 
+        }
+        
+        .subTitle
+        {
+            font-size: 40px !important; 
+            line-height: 1.2 !important;
+            color: blue !important;
+        }
+        
+        .tableText
+        {
+            font-size: 30px !important; 
+            line-height: 1.2 !important;
+            position: relative;
+            top: -20px;
+            padding-left: 10px;
+        }
+    }
+
+    .Coach 
+    {
+        font-family: Trebuchet MS, verdana, sans-serif;
+        font-size: 20px;
+        color: #D6A94C; 
+        position: relative; 
+        top: 18px;
+    }
+    
+    .Coach2 
+    {
+        font-size: 12px;
+        color: white;
+        position: relative;
+        top: -5px;
+    }
+    
+	.resultsText
+	{
+		font-family: "inter";
+		font-size: 16px;
+		color: #838383;
+		max-width: 900px; 
+		width: 100%;
+		margin: 0 auto;
+		text-align: left;
+		padding: 10px;
+	}
+
+	.imageBackHolder
+	{
+		background-image: url('../images/Services 4.jpg'); 
+		background-size: cover; 
+		background-position: center; 
+		/*background-attachment: fixed; //makes image not display complete !!! */
+		height: 352px; 
+		width: 100%;
+		margin: auto;
+	}
+	
+	.imageBack
+	{
+		/* Specify the path to your image file */
+		background-image: url("../images/HOME - 1200x800.png");
+		/* Optional: Control how the image is displayed */
+		/* Prevents the image from repeating */
+		background-repeat: no-repeat;
+		/* Ensures the entire background is covered, even if it has to stretch the image */
+		background-size: cover;
+		/* Fixes the image position so it doesn't scroll with the content */
+		/*background-attachment: fixed; //makes image not display complete !!! */
+		/* Centers the image on the page */ 
+		background-position: center; 
+		height: 800px;
+		width: 100%;
+		margin: auto;
+	}
+	
+	.imageBackAbout
+	{
+		background-image: url("../images/ABOUT - 1200x844.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		/*background-attachment: fixed; //makes image not display complete !!! */
+		background-position: center; 
+		width: 100%; /*actual W=3648 H=2736 */
+		height: 844px;
+		margin: auto;
+	}
+	
+	.imageBackServices
+	{
+		/* background-image: url("../images/SERVICES - 1200x800.png"); */
+		background-image: url("../images/SERVICES - 1200x800.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		/*background-attachment: fixed; //makes image not display complete !!! */
+		background-position: center; 
+		width: 100%; /*actual W=3648 H=2736 */
+		height: 900px;
+		margin: auto;
+	}
+	
+	.imageBackReal_Results
+	{
+		background-image: url("../images/REAL RESULTS - 1200x800.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		/*background-attachment: fixed; //makes image not display complete !!! */
+		background-position: center; 
+		width: 100%; /*actual W=3648 H=2736 */
+		height: 800px;
+		margin: auto;
+	}
+	
+	.imageBackFaqs
+	{
+		background-image: url("../images/FAQ - 1200x700.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		/*background-attachment: fixed; //makes image not display complete !!! */
+		background-position: center; 
+		width: 100%; /*actual W=3648 H=2736 */
+		height: 800px;
+		margin: auto;
+	}
+	
+	.top-container 
+	{
+		background-color: #f1f1f1;
+		padding: 30px;
+		text-align: center;
+	}
+	
+	.header 
+	{
+		position: sticky;
+		top: 0;
+		color: #f1f1f1;
+		height: 230px;
+	/*	width: 100%;
+	 	min-width: 900px; -- un-commenting width: 100%; makes phone pages shrink to half size */
+		background: linear-gradient(to right, #010134, #4478F8);
+		z-index: 1000;
+	}
+	
+	.content 
+	{
+		padding-top: 0;
+		width: 100%;
+		margin: 0 auto;
+	/* 	min-width: 900px; */
+		z-index: 990;
+	}
+	
+	button-link 
+	{
+		background-color: #04AA6D; /* Green background */
+		border: none; /* Remove default border */
+		color: white; /* White text color */
+		padding: 15px 32px; /* Spacing inside the button */
+		text-align: center; /* Center the text */
+		text-decoration: none; /* Remove underline from link */
+		display: inline-block; /* Allows padding and margins */
+		font-size: 16px; /* Adjust font size */
+		cursor: pointer; /* Change cursor to a hand icon on hover */
+		border-radius: 8px; /* Rounded corners */
+	}
+	
+	.button-link:hover 
+	{
+		background-color: dodgerblue; /* Change color on hover */
+	}
+	
+	.menuButton
+	{
+		border: none; 
+		background-color: transparent; 
+		font-family:  Trebuchet MS, "Inter", verdana, sans-serif;
+		font-size: 17px;
+		color: gray;	
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		cursor: pointer; /* Changes cursor to a hand icon */
+		transition: background-color 0.3s ease; /* Smooth transition for color change */
+		padding-right: 30px;
+	}
+	
+	.menuButton:hover 
+	{
+		color: #D6A94C;
+	}
+	
+	.menuSelectedButton
+	{
+		font-family: Trebuchet MS, "Inter", verdana, sans-serif;
+		border: none; 
+		background-color: transparent;
+		font-size: 17px;
+		color: #D6A94C;		
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		cursor: pointer; /* Changes cursor to a hand icon */
+		transition: background-color 0.3s ease; /* Smooth transition for color change */
+		padding-right: 30px;
+	}
+	
+	.menuSelectedButton:hover 
+	{
+		color: #D6A94C;
+	}
+	
+	.pixText 
+	{
+		font-family: Cooper Black, "Inter";
+		font-size: 48px;
+		vertical-align: middle;
+		position: relative;
+		top: 350px;
+		color: white
+	}
+
+	.pixText1 
+	{
+		font-family: "Inter";
+		font-size:42px;
+		color: white;
+		position: relative;
+		top: 350px;
+	}
+	
+	.pixText2 
+	{
+		font-family: Brush Script MT, "Dancing Script", cursive, "Inter";
+		font-size: 42px;
+		color: white;
+	}
+
+    .logText
+    {
+		font-family: "Inter";
+		font-size:28px;
+		text-shadow: 3px 3px 3px #c0c0c0;
+		color: white;
+		position: relative;
+		top: 250px;
+    }
+
+    .logText1
+    {
+		font-family: Cooper Black, "Archivo Black", "Inter";
+		font-size: 42px;
+		font-weight: bold;
+		text-shadow: 5px 5px 5px #c0c0c0;
+	/*	font-weight: 700;
+	    vertical-align: middle;
+		position: relative;
+		top: 350px; */
+		color: white
+    }
+    
+	.showText
+	{
+		font-family: Stencil Regular, "Inter"; 
+		font-size: 96px; 
+		vertical-align: middle; 
+		position: relative; top: 300px;		
+	}
+	
+	.textShadow2
+	{
+		font-family: "Dancing Script", cursive, brush script MT, "Inter";
+		text-shadow: 5px 5px 5px #1A2E7E;
+		font-size: 92px;
+		color: #942224;
+		padding-left: 10px;
+	}
+	
+	.table-container 
+	{
+		display: flex;       	/*	 Enables Flexbox layout */
+		justify-content: center; /*	 Optional: Centers the tables horizontally in the container */
+		align-items: center; 	/*	 Aligns the tables vertically along the cross axis */
+		max-width: 900px; 
+		width: 100%;
+		background: #EDF4FC; 
+		margin: 0 auto;
+	}
+
+	.table-container2 
+	{
+		/*max-width: 900px; */
+		width: 100%;
+		background: #EDF4FC; 
+		margin: 0 auto;
+	}
+	
+	input,textarea 
+	{	
+		font-family: "Inter",  arial, verdana, sans-serif;
+		font-size: 16px;
+		color: #000000;	
+	}
+	
+	.ContacMenuButton
+	{
+		font-family: Trebuchet MS, "Inter",  verdana, sans-serif;
+		border: none;
+		border-radius: 8px; 
+		background-color: white; /*transparent;*/
+		font-size: 18px;
+		color: #A40006;		
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		cursor: pointer; /* Changes cursor to a hand icon */
+		transition: background-color 0.3s ease; /* Smooth transition for color change */
+		padding-right: 28px;
+	}
+
+	.ContacMenuButton:hover 
+	{
+		color: #D6A94C;
+	}
+
+	.boxDecoratedButton
+	{
+		font-family: Trebuchet MS, "Inter",  verdana, sans-serif;
+		border: 0px solid #3157C1;
+		border-radius: 8px; 
+		background-color: white; /*transparent;*/
+		font-size: 18px;
+		color: #A40006;		
+		text-align: center;
+		text-decoration: none;
+		box-shadow: 2px 2px 6px #606060;
+		background-image: radial-gradient(circle, #F5F7FB, #D4DEF8);
+		display: inline-block;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+	}
+	
+	.boxDecoratedButton:hover 
+	{
+		color: #D6A94C;
+	}
+	
+	.SubmitButton, .SubmitPhoneButton
+	{
+		font-family: Trebuchet MS, "Inter", verdana, sans-serif;
+		border: none; 
+		background-color: transparent; /*#26419F; */
+		font-size: 18px;
+		color: #D6A94C; /*#A40006;*/		
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		cursor: pointer; /* Changes cursor to a hand icon */
+		transition: background-color 0.3s ease; /* Smooth transition for color change */
+		padding-right: 28px;
+	}
+	
+	.SubmitButton:hover 
+	{
+		color: white; /*#D6A94C;*/
+	}
+	
+	.SubmitPhoneButton:hover
+	{
+		color: white; /*#D6A94C;*/
+	}
+	
+	.textShadow
+	{
+		font-family: "Dancing Script", cursive, brush script MT;
+		text-shadow: 5px 5px 5px #c0c0c0;
+		font-size: 92px;
+		color: #942224;
+		padding-left: 10px;
+	}
+	
+	.header2
+	{
+		font-family: "Dancing Script", cursive, "Inter", brush script MT;
+		font-size: 56px;
+		text-shadow: none;
+		font-weight: bold;
+		font-weight: 900;
+		color: #942224;
+	}
+	
+	.header3
+	{
+		font-family: "Dancing Script", cursive, "Inter", brush script MT;
+		font-size: 42px;
+		text-shadow: none;
+		font-weight: bold;
+		font-weight: 900;
+		color: #942224;
+	}
+	
+	.subTitle
+	{
+		font-family: "Dancing Script", cursive, "Inter", brush script MT; 
+		font-size: 28px; 
+		color: #942224;
+	}
+	
+	.tableText, .mainMenu .boxText
+	{
+		font-family: "Inter", arial, verdana, sans-serif; 
+		font-size: 16px; 
+		color: #838383;
+		max-width: 900px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	.tableText-Contact-left
+	{
+	    max-width: 400px;
+	    width: 100%;
+		margin: 0 auto;
+		font-family: "Inter", arial, verdana, sans-serif; 
+		font-size: 16px; 
+	    color: white;
+	    float: left;
+	    vertical-align: top;
+	    background: transparent;
+	    position: relative;
+	    top: -44px;
+	}
+	
+	.tableText-Contact-right
+	{
+	    max-width: 500px;
+	    width: 100%;
+		margin: 0 auto;
+		font-family: "Inter", arial, verdana, sans-serif; 
+		font-size: 16px; 
+	    color: #838383;
+	    float: right;
+	    vertical-align: top;
+	    background: transparent;
+	}
+	
+    .input-container 
+	{
+		font-size: 24px;
+        position: relative;
+		top: -0px;
+        margin-bottom: 20px;
+		float: right;
+		padding-left: 150px;
+    }
+    
+     .input-containerPhone 
+	{
+		font-size: 28px;
+        position: relative;
+		top: -0px;
+        margin-bottom: 60px;
+		padding-left: 20px;
+    }
+   
+	.tooltip 
+	{
+		display: none;
+		/* Add styling for your tooltip (background, color, padding, etc.) */
+		background-color: white;
+		color: black;
+		padding: 1px;
+		font-size: 11px;
+		/*border-radius: 4px;*/
+		position: absolute; /* or relative, depending on your layout */
+		z-index: 100;
+	}		
+
+    /* Default style for the tooltip */
+    .tooltip-text 
+	{
+		font-size: 12px;
+        visibility: hidden;
+        background-color: #A40006;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 2px 2px 2px 2px;
+        position: absolute;
+        z-index: 10;
+		top: 28px;
+        /*bottom: 125%; // Position the tooltip above the input */
+        left: 200px;
+        /*margin-left: -60px; // Center the tooltip */
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    /* Style for the error state */
+    .input-error 
+    {
+        background-color: #C0C0C0;
+        border: 1px solid black;
+    }
+
+    /* Class to show the tooltip */
+    .show-tooltip 
+    {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+	input::placeholder 
+	{
+	  font-family: arial, "Inter"; /* The placeholder's specific font */
+	  color: #838383;
+	  font-size: 14px;
+	}
+	
+	.input-container2
+	{
+		font-size: 24px;
+        position: relative;
+		top: 35px;
+		left: 190px;
+		float: right;
+	}
+	
+	.interestedIn
+	{	
+		height: 26px;
+		font-size: 14px;
+		text-align: left;
+		width: 438px; 
+	/*	position: relative;
+		left: -0px;
+	    top: 0px; */
+	}
+	
+	.formTextarea
+	{
+	    font-family: "Inter", arial;
+	    font-size: 14px; 
+	    position: relative; 
+	    top: 6px;
+	    /*left: -36px; */
+	    width: 436px;
+	}
+	
+	.ServiceBkgnd
+	{
+	    width: 100%;
+	    height: 800px;
+	    margin: 0 auto; 
+	    display: block; 
+	    background-image: url('./images/SERVICES BACKGROUND.jpg'); 
+	    background-size: cover; 
+	    background-position: center; 
+	    opacity: 0.5;
+	}

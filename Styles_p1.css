@@ -1,0 +1,880 @@
+
+/* ------------------------------------------------------ */
+/* PHONE MODE (your custom isPhone scaling)               */
+/* ------------------------------------------------------ */
+	
+	html.isPhone
+	{
+    	.logText
+        {
+    		font-size: 15px;
+    		position: relative;
+		    top: 120px;
+        }
+
+    	.subTitle
+    	{
+    		font-size: 26px;
+    	}
+	
+    	.logText1
+        {
+    		font-size: 20px;
+        }
+        
+        .grid-item-left, .grid-item-right
+        {
+    		font-size: 10px;
+        }    
+    
+    	input 
+    	{
+    	   width: 100%;
+    	   max-width: 100%;
+    	   font-size: 10px;
+    	   color: #838383;
+    	   padding-right: 2px;
+    	}
+    	
+    	textarea 
+    	{
+    	   width: 100%;
+    	   max-width: 100%;
+    	   font-size: 10px;
+    	   color: #838383;
+    	   padding-right: 2px;
+    	}
+    	
+        select 
+    	{
+    	   height: 20px;
+    	   width: 100%;
+    	   max-width: 98%;
+    	   font-size: 0.9rem; /*10px;*/
+    	   color: #838383;
+    	   padding-right: 4px;
+    	}
+    	
+        .input-container 
+    	{
+    		width: 100%;
+    		max-width: 100%;
+    		font-size: 10px;
+            margin-bottom: 8px;
+    	}	
+    
+    	.formTextarea
+    	{
+           width: 100%;
+           max-width: 100%;
+    	   font-size: 10px;
+    	   color: #838383;
+    	}	
+
+        .grid-container 
+        {
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+            gap: 10px;
+        }
+        
+        .grid-item-left
+        {
+            max-width: 100%;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        .grid-item-right
+        {
+            max-width: 100%;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        input::placeholder 
+    	{
+    	   font-size: 10px;
+    	   color: #838383;
+    	}
+    	
+    	.SubmitButton
+    	{
+    		font-size: 10px;
+    	}
+
+    	.interestedIn
+    	{	
+    		width: 100%;
+    		max-width: 100%;
+    		font-size: 10px;
+    		padding-right: 2px;
+    	}
+
+    	.imageBack, .imageBackAbout, .imageBackServices
+    	{
+    	    width: auto;
+    	    height: 340px;
+    	    display: block;
+    	    margin: 0 auto;
+    	}
+	
+    	.Logos
+    	{
+    	    max-width: 70%;
+    	    height: auto;
+    	}
+    /*	
+    	.Logo_Round
+    	{
+    	    max-width: 60px;
+    	    heigth: auto;
+    	}
+*/
+    	.Schedule
+    	{
+    	    max-width: 100px;
+    	    height: auto;
+    	    position: relative;
+    	    top: 25px;
+    	}
+        
+        .mainMenu
+        {
+            font-size: 12px;
+            position: relative;
+            top: -6px;
+            left: -0px;
+        }
+    
+    	.menuButton
+    	{
+    		font-size: 16px;
+    		padding-right: 4px;
+    	}
+
+    	.menuSelectedButton
+    	{
+    		font-size: 16px;
+    		padding-right: 4px;
+    	}
+    	
+    	.SubmitPhoneButton
+    	{
+    	    font-size: 12px;
+    	    color: #D6A94C;
+    	}
+
+    	.header 
+    	{
+    	    max-height: 180px;
+    	    height: 100%;
+    	    margin: 0 auto;
+    	}
+    	
+        .Schedule-container
+        {
+            padding-left: 2px;
+            margin-top: 45px;
+            margin-bottom: 0px;
+        }
+        
+        .tooltip 
+	    {
+	        font-family: "Inter";
+            font-size: 8px;
+	    }
+	    
+        .tooltip-text 
+    	{
+    		font-size: 8px;
+    	}
+
+        .headerLogos
+        {
+            max-height: 170px;
+            height: 100%;
+        }
+	
+        .AllRightsReserved
+        {
+            font-size: 10px;
+        }
+        
+        .submitInput
+        {
+            display: inline-block;
+            position: relative;
+            left: 0px;
+        }
+        
+        .resetInput
+        {
+            display: flex;
+            position: relative;
+            left: 60px;
+            top: -28px;
+        }
+
+        .Coach 
+        {
+            width: 100px;
+            font-size: 13px;
+            text-align: center;
+            position: relative; 
+            top: -0px;
+            left: -20px;
+        }
+        
+        .Coach2 
+        {
+            font-size: 8px;
+            color: white;
+            position: relative;
+            top: -4px;
+            line-height: 0.6;
+        }
+
+	}
+	/* ####################  END of html.isPhone #################### */
+
+    /* General Navbar Styling */
+    .navbar
+    {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px 20px;
+        margin-top: -10px;
+    }
+    
+    .nav-menu 
+    {
+        list-style: none;
+        display: flex;
+        margin-top: -2px;
+        padding: 0;
+    }
+    
+    .nav-menu li a 
+    {
+        text-decoration: none;
+        padding: 0px 15px;
+        display: block;
+    }
+    
+    .hamburger 
+    {
+        display: none;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        margin-left: 140px;
+    }
+    
+    /* Mobile styles - activated when screen width is 768px or less */
+    @media (max-width: 768px) 
+    {
+        .hamburger
+        {
+            display: block;
+        }
+    
+        .nav-menu 
+        {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 185px;
+            background-color: #2847A6;
+            width: 120px;
+            flex-direction: column;
+            text-align: left;
+        }
+    
+        .nav-menu.active 
+        {
+            display: block;
+        }
+    
+        .nav-menu li a 
+        {
+            padding: 5px 0px;
+        }
+    }
+    
+    body, table, td, div, p 
+    { 
+        word-wrap: break-word; 
+        overflow-wrap: break-word; 
+    }	
+
+    .headerLogos
+    {
+        max-height: 190px;
+        height: 100%;
+        text-align: center;
+        padding-bottom: 0;
+        background: linear-gradient(to right, #010134, #4478F8);
+    }
+
+	.interestedIn
+	{	
+		height: 22px;
+		font-size: 14px;
+		text-align: left;
+		width: 100%;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	.menuButton
+	{
+		border: none; 
+		background-color: transparent; 
+		font-family:  Trebuchet MS, "Inter", verdana, sans-serif;
+		font-size: 17px;
+		color: gray;	
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		cursor: pointer; /* Changes cursor to a hand icon */
+		transition: background-color 0.3s ease; /* Smooth transition for color change */
+		padding-right: 30px;
+	}
+	
+	.menuButton:hover 
+	{
+		color: #D6A94C;
+	}
+	
+	.menuSelectedButton
+	{
+		font-family: Trebuchet MS, "Inter", verdana, sans-serif;
+		border: none; 
+		background-color: transparent;
+		font-size: 17px;
+		color: #D6A94C;		
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		cursor: pointer; /* Changes cursor to a hand icon */
+		transition: background-color 0.3s ease; /* Smooth transition for color change */
+		padding-right: 30px;
+	}
+	
+	.menuSelectedButton:hover 
+	{
+		color: #D6A94C;
+	}
+
+	.boxDecoratedButton
+	{
+		font-family: Trebuchet MS, "Inter",  verdana, sans-serif;
+		border: 0px solid #3157C1;
+		border-radius: 8px; 
+		background-color: white; /*transparent;*/
+		font-size: 18px;
+		color: #A40006;		
+		text-align: center;
+		text-decoration: none;
+		box-shadow: 2px 2px 6px #606060;
+		background-image: radial-gradient(circle, #F5F7FB, #D4DEF8);
+		display: inline-block;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+	}
+	
+	.boxDecoratedButton:hover 
+	{
+		color: #D6A94C;
+	}
+	
+	.header 
+	{
+	    width: 100%;
+	    height: 190px;
+	    margin: 0 auto;
+		position: sticky;
+		top: 0;
+		color: #f1f1f1;
+		background: linear-gradient(to right, #010134, #4478F8);
+		z-index: 1000;
+	}
+	
+	.header3
+	{
+		font-family: "Dancing Script", cursive, "Inter", brush script MT;
+		font-size: 42px;
+		text-shadow: none;
+		font-weight: bold;
+		font-weight: 900;
+		color: #942224;
+	}
+
+    .ContactForm
+    {
+        width: 100%;
+        margin: 0 auto;
+        color: black;
+        background: linear-gradient(to right, #010134, #4478F8);
+    /*    z-index: 30; */
+    }
+
+    .ContactFormContainer
+    {
+        max-width: 900px;
+        width: 100%; margin: 0 auto;
+    }
+    
+	.menuTable
+	{   max-width: 900px;
+	    width: 100%;
+	    margin: 0 auto;
+	    font-family: "Inter", arial;
+	    font-size: 16px; 
+	}	    
+
+	.content 
+	{
+		width: 100%;
+		margin: 0 auto;
+		z-index: 990;
+	}
+    
+    .grid-container 
+    {
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto;
+        background: transparent;
+        gap: 1px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+   }
+    
+    .grid-item-left
+    {
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        font-family: 'Inter';
+        font-size: 16px;
+        color: white;
+        background: transparent;
+        vertical-align: top;
+    }    
+
+    .grid-item-right
+    {  
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        font-family: 'Inter';
+        font-size: 16px;
+        color: #838383;
+        background: transparent;
+        vertical-align: top;
+        padding-right: 2px; 
+    }
+    
+	.tableText-Contact
+	{
+        max-width: 900px;
+		width: 100%; 
+		margin: 0 auto;
+		font-family: "Inter", arial, verdana, sans-serif;
+		font-size: 16px;
+		color: white;
+		background: transparent;
+	}
+
+	.table-container 
+	{
+		max-width: 100%;
+		width: 100%;
+		margin: 0 auto;
+		background: transparent;
+	}
+
+	.tableText-Contact-left
+	{
+	    max-width: 400px;
+	    width: 100%;
+		margin: 0 auto;
+		font-family: "Inter", arial, verdana, sans-serif; 
+		font-size: 16px; 
+	    color: white;
+	    float: left;
+	    vertical-align: top;
+	    background: transparent;
+	    position: relative;
+	    top: -44px;
+	}
+	
+	.tableText-Contact-right
+	{
+	    max-width: 500px;
+	    width: 100%;
+		margin: 0 auto;
+		font-family: "Inter", arial, verdana, sans-serif; 
+		font-size: 16px; 
+	    color: #838383;
+	    float: right;
+	    vertical-align: top;
+	    background: transparent;
+	}
+	
+	.tooltip 
+	{
+		background-color: white;
+		color: black;
+		padding: 1px;
+		font-size: 11px;
+		position: relative;
+	/*	z-index: 100;  */
+	}		
+
+    .tooltip-text 
+	{
+		font-family: "Inter", arial, verdana, sans-serif; 
+		font-size: 12px;
+        visibility: visible; /*hidden;*/
+        background-color: #A40006;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 2px 2px 2px 2px;
+        position: relative;
+        z-index: 10;
+	/*	top: 0px; */
+        left: 20px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .input-error 
+    {
+        background-color: #C0C0C0;
+        border: 1px solid black;
+    }
+
+    .show-tooltip 
+    {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+	input::placeholder 
+	{
+	  font-family: arial, "Inter";
+	  color: #838383;
+	  font-size: 14px;
+	}
+	
+    .input-container 
+	{
+		width: 100%;
+		max-width: 100%;
+		font-size: 16px;
+    /*    margin-bottom: 0px;
+        padding-left: 0;  */
+        position: relative;
+        overflow: visible;
+    }
+	
+    .my-white-link, .my-white-link:visited
+	{
+        color: white;
+    }
+	
+	.my-white-link:hover , .my-white-link:active
+	{
+        color: #D6A94C;	
+	}
+	
+    .my-wine-link, .my-wine-link:visited
+	{
+        color: #942224;
+    }
+	
+	.my-wine-link:hover , .my-wine-link:active
+	{
+        color: #D6A94C;	
+	}
+
+    select 
+    {
+      width: 100%;
+      max-width: 100%;
+      font-size: 1rem;
+      color: #838383;
+      box-sizing: border-box;
+    }
+
+	input, textarea 
+	{
+	   width: 100%;
+	   max-width: 100%;
+	   box-sizing: border-box; 
+	}
+
+    .SubmitButton, .SubmitPhoneButton
+	{
+		font-family: Trebuchet MS, "Inter", verdana, sans-serif;
+		border: none; 
+		background-color: transparent;
+		font-size: 18px;
+		color: #D6A94C;	
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+		padding-right: 28px;
+	}
+	
+	.SubmitButton:hover 
+	{
+		color: white;
+	}
+
+	.SubmitPhoneButton:hover
+	{
+		color: white;
+	}
+	
+	.textShadow2
+	{
+		font-family: "Dancing Script", cursive, brush script MT, "Inter";
+		text-shadow: 5px 5px 5px #1A2E7E;
+		font-size: 92px;
+		color: #942224;
+		padding-left: 10px;
+	}
+
+	.header2
+	{
+		font-family: "Dancing Script", cursive, "Inter", brush script MT;
+		font-size: 56px;
+		text-shadow: none;
+		font-weight: bold;
+		font-weight: 900;
+		color: #942224;
+	}
+	
+	.subTitle
+	{
+	    max-width: 900px;
+	    width: 100%;
+	    margin: 0 auto;
+		font-family: "Dancing Script", cursive, "Inter", brush script MT; 
+		font-size: 28px; 
+		color: #942224;
+	}
+
+	.tableText, .boxText
+	{
+		font-family: "Inter", arial, sans-serif; 
+		font-size: 16px; 
+		color: #838383;
+		max-width: 900px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+    .logText
+    {
+		font-family: "Inter";
+		font-size:28px;
+		text-shadow: 3px 3px 3px #c0c0c0;
+		color: white;
+		position: relative;
+		top: 250px;
+    }
+
+    .logText1
+    {
+		font-family: Cooper Black, "Archivo Black", "Inter";
+		font-size: 42px;
+		font-weight: bold;
+		text-shadow: 5px 5px 5px #c0c0c0;
+		color: white
+    }
+
+	.textShadow
+	{
+		font-family: "Dancing Script", cursive, brush script MT;
+		text-shadow: 5px 5px 5px #c0c0c0;
+		font-size: 92px;
+		color: #942224;
+		padding-left: 10px;
+	}
+
+	.imageBack
+	{
+		background-image: url("../images/HOME - 1200x800.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center; 
+		height: 900px;
+		width: auto;
+		margin: 0 auto;
+	}
+	
+	.imageBackAbout
+	{
+		background-image: url("../images/ABOUT - 1200x844.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center; 
+		width: auto;
+		height: 644px;
+		margin: auto;
+	}
+	
+	.imageBackServices
+	{
+		background-image: url("../images/SERVICES - 1200x800.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center; 
+		width: auto;
+		height: 900px;
+		margin: auto;
+	}
+	
+	.imageBackReal_Results
+	{
+		background-image: url("../images/REAL RESULTS - 1200x800.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center; 
+		width: auto;
+		height: 800px;
+		margin: auto;
+	}
+	
+	.imageBackFaqs
+	{
+		background-image: url("../images/FAQ - 1200x700.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center; 
+		width: auto;
+		height: 800px;
+		margin: auto;
+	}
+	
+	.formTextarea
+	{
+	    font-family: "Inter", arial;
+	    font-size: 14px; 
+	    position: relative; 
+	    top: 6px;
+	    /*left: -36px; */
+	    width: 100%;
+	}
+	
+	.Logos
+	{
+	    max-width: 100%;
+	    height: auto;
+	}
+	
+	.Logo_Round
+	{
+	    max-width: 100px;
+	    height: auto;
+	}
+
+	.Schedule
+	{
+	    max-width: 100px;
+	    height: auto;
+	    position: relative; 
+	    top: -13px;
+	}
+
+    .Coach 
+    { 
+        font-family: Trebuchet MS, verdana, sans-serif;
+        font-size: 20px;
+        color: #D6A94C; 
+        text-align: center;
+        background-color: transparent;
+    /*    position: relative;
+        left: -280px;
+        top: 30px; */
+    }
+    
+    .Coach2 
+    {
+        font-family: "Inter", verdana, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        position: relative;
+        top: -8px;
+        color: white;
+        background-color: transparent;
+    }
+    
+    .mainMenu
+    { 
+		font-family: "Inter", arial, sans-serif; 
+		font-size: 16px; 
+		color: #838383;
+		max-width: 900px;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+        position: relative;
+        top: -0px;
+        left: 0px;
+        background: transparent;
+    }
+
+    .mainHeader
+    {
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    /*    display: grid;
+        grid-template-columns: 0.25fr 0.75fr;
+        gap: 2px;  */
+    }
+
+    .Schedule-container
+    {
+        padding-left: 2px;
+        margin-top: -8px;
+        margin-bottom: 60px;
+    }
+
+    .AllRightsReserved
+    {
+        color: #FFFFFF;
+        padding: 10px;
+		font-family: "Inter", arial, sans-serif; 
+		font-size: 16px; 
+    }
+    
+    .submitInput
+    {
+        display: inline-block;
+        position: relative;
+        left: 200px;
+    }
+    
+    .resetInput
+    {
+        display: flex;
+        position: relative;
+        left: 100px;
+        top: -44px;
+    }
+    
